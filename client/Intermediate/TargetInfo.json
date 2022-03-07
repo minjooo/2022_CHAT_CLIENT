@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "client",
+			"Path": "C:\\Users\\minjoo.kim\\Desktop\\chat\\2022_CHAT_CLIENT\\client\\Source\\client.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "clientEditor",
+			"Path": "C:\\Users\\minjoo.kim\\Desktop\\chat\\2022_CHAT_CLIENT\\client\\Source\\clientEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
