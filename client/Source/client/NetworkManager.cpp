@@ -13,7 +13,7 @@ ANetworkManager::ANetworkManager()
 
 bool ANetworkManager::ConnectServer(const FString& add, const int32& po)
 {
-	socket = ISocketSubsystem::Get(PLATFORM_SOCKETSUBSYSTEM)->CreateSocket(NAME_Stream, TEXT("default"), false);
+	m_socket = ISocketSubsystem::Get(PLATFORM_SOCKETSUBSYSTEM)->CreateSocket(NAME_Stream, TEXT("default"), false);
 
 	FString address = add;
 	int32 port = po;
@@ -26,14 +26,23 @@ bool ANetworkManager::ConnectServer(const FString& add, const int32& po)
 	addr->SetPort(port);
 
 	UE_LOG(LogTemp, Log, TEXT("Trying to connect!"));
-	return socket->Connect(*addr);
+	return m_socket->Connect(*addr);
 }
 
-bool ANetworkManager::SendMsg(FSocket* Socket, const FString& Msg)
+void ANetworkManager::SendLogin(const FString& name)
 {
-	check(Socket);
+	FString str = "login ";
+	str += name;
+	str += "\r\n";
+	UE_LOG(LogTemp, Log, TEXT("send login!"));
+	SendMsg(str);
+}
+
+bool ANetworkManager::SendMsg(const FString& Msg)
+{
+	check(m_socket);
 	int32 BytesSent = 0;
-	return Socket->Send((uint8*)TCHAR_TO_UTF8(*Msg), Msg.Len(), BytesSent);
+	return m_socket->Send((uint8*)TCHAR_TO_UTF8(*Msg), Msg.Len(), BytesSent);
 }
 
 bool ANetworkManager::RecvMsg(FSocket* Socket, uint32 DataSize, FString& Msg)

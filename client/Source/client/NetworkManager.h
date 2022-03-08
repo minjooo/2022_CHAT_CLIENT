@@ -24,6 +24,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Network")
 		bool ConnectServer(const FString& address, const int32& port);
 
+	UFUNCTION(BlueprintCallable, Category = "Network")
+		void SendLogin(const FString& name);
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -33,8 +36,8 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	bool RecvMsg(FSocket* Socket, uint32 DataSize, FString& Msg);
-	bool SendMsg(FSocket* Socket, const FString& Msg);
+	bool SendMsg(const FString& Msg);
 
 protected:
-	FSocket* socket;
+	FSocket* m_socket;
 };

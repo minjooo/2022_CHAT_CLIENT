@@ -2592,3 +2592,566 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2022.03.08-03.26.57:843][287]LogUObjectHash: Compacting FUObjectHashTables data took   3.36ms
 [2022.03.08-03.26.57:848][287]LogActorComponent: ReregisterComponent: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Starter_Background_Cue_2.AudioComponent0) Not currently registered. Aborting.
 [2022.03.08-03.26.57:864][288]LogPlayLevel: Display: Destroying online subsystem :Context_40
+[2022.03.08-03.29.05:146][259]LogTemp: Repeating last play command: 새 에디터 창 (PIE)
+[2022.03.08-03.29.05:154][259]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.08-03.29.05:154][259]PIE: New page: PIE 세션: Minimal_Default (2022. 3. 8. 오후 9:29:05)
+[2022.03.08-03.29.05:154][259]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2022.03.08-03.29.05:156][259]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002156s)
+[2022.03.08-03.29.05:157][259]LogAIModule: Creating AISystem for world Minimal_Default
+[2022.03.08-03.29.05:157][259]LogPlayLevel: PIE: World Init took: (0.001031s)
+[2022.03.08-03.29.05:157][259]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.003273s)
+[2022.03.08-03.29.05:187][259]LogUObjectHash: Compacting FUObjectHashTables data took   2.54ms
+[2022.03.08-03.29.05:188][259]LogAudio: Display: Creating Audio Device:                 Id: 20, Scope: Unique, Realtime: True
+[2022.03.08-03.29.05:188][259]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.08-03.29.05:188][259]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.08-03.29.05:188][259]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.08-03.29.05:188][259]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.08-03.29.05:188][259]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.08-03.29.05:188][259]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.08-03.29.05:188][259]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.08-03.29.05:188][259]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.08-03.29.05:189][259]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.03.08-03.29.05:189][259]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.03.08-03.29.05:189][259]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.03.08-03.29.05:189][259]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.08-03.29.05:189][259]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.08-03.29.05:189][259]LogAudioMixer: Display: 1: FrontRight
+[2022.03.08-03.29.05:210][259]LogAudioMixer: Display: Using Audio Device 원격 오디오
+[2022.03.08-03.29.05:211][259]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.08-03.29.05:211][259]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.08-03.29.05:211][259]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.08-03.29.05:211][259]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.08-03.29.05:211][259]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.08-03.29.05:211][259]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.08-03.29.05:212][259]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.08-03.29.05:212][259]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.08-03.29.05:212][259]LogInit: FAudioDevice initialized.
+[2022.03.08-03.29.05:212][259]LogAudio: Display: Audio Device (ID: 20) registered with world 'Minimal_Default'.
+[2022.03.08-03.29.05:288][259]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.08-03.29.05:289][259]LogLoad: Game class is 'MenuGameMode_C'
+[2022.03.08-03.29.05:290][259]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2022.03.08-12.29.05
+[2022.03.08-03.29.05:290][259]LogWorld: Bringing up level for play took: 0.000517
+[2022.03.08-03.29.05:290][259]LogOnline: OSS: Creating online subsystem instance for: :Context_41
+[2022.03.08-03.29.05:292][259]LogTemp: network beginPlay
+[2022.03.08-03.29.05:294][259]PIE: 서버가 로그인했습니다.
+[2022.03.08-03.29.05:295][259]PIE: 에디터에서 플레이 총 시작 시간 0.144초입니다.
+[2022.03.08-03.29.13:653][245]LogTemp: Trying to connect!
+[2022.03.08-03.29.16:888][633]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.08-03.29.16:890][633]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2022.03.08-03.29.16:890][633]LogSlate: Window 'client 프리뷰 [NetMode: Standalone]  (64-bit/Windows)' being destroyed
+[2022.03.08-03.29.16:932][633]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2022.03.08-03.29.16:932][633]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.08-03.29.16:939][633]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.08-03.29.16:947][633]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.08-03.29.16:972][633]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.08-03.29.16:973][633]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.08-03.29.16:980][633]LogUObjectHash: Compacting FUObjectHashTables data took   2.57ms
+[2022.03.08-03.29.16:986][633]LogActorComponent: ReregisterComponent: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Starter_Background_Cue_2.AudioComponent0) Not currently registered. Aborting.
+[2022.03.08-03.29.17:011][634]LogPlayLevel: Display: Destroying online subsystem :Context_41
+[2022.03.08-03.30.24:535][316]LogUObjectHash: Compacting FUObjectHashTables data took   2.33ms
+[2022.03.08-03.30.24:537][316]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/StarterContent/Maps/Minimal_Default' took 0.029
+[2022.03.08-03.30.24:537][316]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/LoginMenu] ([2] browsable assets)...
+[2022.03.08-03.30.24:537][316]OBJ SavePackage: Finished generating thumbnails for package [/Game/LoginMenu]
+[2022.03.08-03.30.24:537][316]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/LoginMenu" FILE="../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/Autosaves/Game/LoginMenu_Auto5.uasset" SILENT=false AUTOSAVING=true
+[2022.03.08-03.30.24:547][316]LogSavePackage: Moving '../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/LoginMenu_Auto5AD01818D4068ED6B9A8B9BB143019B60.tmp' to '../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/Autosaves/Game/LoginMenu_Auto5.uasset'
+[2022.03.08-03.30.24:547][316]LogFileHelpers: Auto-saving content packages took 0.010
+[2022.03.08-03.40.24:944][690]LogUObjectHash: Compacting FUObjectHashTables data took   4.57ms
+[2022.03.08-03.40.24:948][690]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/StarterContent/Maps/Minimal_Default' took 0.041
+[2022.03.08-03.40.24:949][690]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/LoginMenu] ([2] browsable assets)...
+[2022.03.08-03.40.24:949][690]OBJ SavePackage: Finished generating thumbnails for package [/Game/LoginMenu]
+[2022.03.08-03.40.24:949][690]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/LoginMenu" FILE="../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/Autosaves/Game/LoginMenu_Auto6.uasset" SILENT=false AUTOSAVING=true
+[2022.03.08-03.40.24:958][690]LogSavePackage: Moving '../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/LoginMenu_Auto61E1FCB0E42F57E2693C3C2AD65A4EC5B.tmp' to '../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/Autosaves/Game/LoginMenu_Auto6.uasset'
+[2022.03.08-03.40.24:960][690]LogFileHelpers: Auto-saving content packages took 0.011
+[2022.03.08-03.41.54:936][443]BlueprintLog: New page: LoginMenu 컴파일
+[2022.03.08-03.41.54:970][443]LogUObjectHash: Compacting FUObjectHashTables data took   3.15ms
+[2022.03.08-03.41.56:974][646]Candidate modules for hot reload:
+[2022.03.08-03.41.56:974][646]  client
+[2022.03.08-03.41.56:974][646]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=client,2584 clientEditor Win64 Development -Project="C:/Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/client.uproject" "C:/Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/client.uproject"  -IgnoreJunk]
+[2022.03.08-03.41.56:977][646]Warning: Starting HotReload took  0.0s.
+[2022.03.08-03.42.07:852][894]CompilerResultsLog: New page: 컴파일 - 2022. 3. 8. 오후 9:42:07
+[2022.03.08-03.42.07:853][894]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT).
+[2022.03.08-03.42.07:853][894]CompilerResultsLog: Parsing headers for clientEditor
+[2022.03.08-03.42.07:853][894]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\client.uproject" "C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\clientEditor\Development\clientEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\minjoo.kim\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2022.03.08-03.42.07:853][894]CompilerResultsLog: LogInit: Display: Loading text-based GConfig....
+[2022.03.08-03.42.07:853][894]CompilerResultsLog: Reflection code generated for clientEditor in 3.7055414 seconds
+[2022.03.08-03.42.07:853][894]CompilerResultsLog: Building clientEditor...
+[2022.03.08-03.42.07:853][894]CompilerResultsLog: Using Visual Studio 2019 14.29.30140 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.03.08-03.42.07:853][894]CompilerResultsLog: Building 6 actions with 16 processes...
+[2022.03.08-03.42.07:853][894]CompilerResultsLog:   [1/6] client.init.gen.cpp
+[2022.03.08-03.42.07:853][894]CompilerResultsLog:   [2/6] NetworkManager.cpp
+[2022.03.08-03.42.07:853][894]CompilerResultsLog:    C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Source\client\NetworkManager.cpp(38) : error C2511: 'bool ANetworkManager::SendMsg(const FString &)': ?????ε??? ???? ?Լ??? 'ANetworkManager'?? ?????ϴ?.
+[2022.03.08-03.42.07:853][894]CompilerResultsLog:   C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Source\client\NetworkManager.h(15): note: 'ANetworkManager' ?????? ?????Ͻʽÿ?.
+[2022.03.08-03.42.07:853][894]CompilerResultsLog:    C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Source\client\NetworkManager.cpp(39) : error C2597: ?????? ???? 'ANetworkManager::m_socket'?? ???? ?????? ?߸??Ǿ????ϴ?.
+[2022.03.08-03.42.07:853][894]CompilerResultsLog:   C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Source\client\NetworkManager.h(42): note: 'ANetworkManager::m_socket' ?????? ?????Ͻʽÿ?.
+[2022.03.08-03.42.07:853][894]CompilerResultsLog:    C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Source\client\NetworkManager.cpp(41) : error C2065: 'Socket': ???????? ???? ?ĺ????Դϴ?.
+[2022.03.08-03.42.07:853][894]CompilerResultsLog:   [3/6] NetworkManager.gen.cpp
+[2022.03.08-03.42.07:853][894]LogMainFrame: MainFrame: Module compiling took 10.882 seconds
+[2022.03.08-03.42.07:853][894]Warning: HotReload failed, recompile failed
+[2022.03.08-03.42.33:084][888]Candidate modules for hot reload:
+[2022.03.08-03.42.33:084][888]  client
+[2022.03.08-03.42.33:084][888]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=client,2008 clientEditor Win64 Development -Project="C:/Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/client.uproject" "C:/Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/client.uproject"  -IgnoreJunk]
+[2022.03.08-03.42.33:088][888]Warning: Starting HotReload took  0.0s.
+[2022.03.08-03.42.38:484][477]CompilerResultsLog: New page: 컴파일 - 2022. 3. 8. 오후 9:42:38
+[2022.03.08-03.42.38:484][477]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT).
+[2022.03.08-03.42.38:484][477]CompilerResultsLog: Building clientEditor...
+[2022.03.08-03.42.38:484][477]CompilerResultsLog: Using Visual Studio 2019 14.29.30140 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.03.08-03.42.38:484][477]CompilerResultsLog: Building 4 actions with 16 processes...
+[2022.03.08-03.42.38:484][477]CompilerResultsLog:   [1/4] NetworkManager.cpp
+[2022.03.08-03.42.38:484][477]CompilerResultsLog:    C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Source\client\NetworkManager.cpp(38) : error C2511: 'bool ANetworkManager::SendMsg(const FString &)': ?????ε??? ???? ?Լ??? 'ANetworkManager'?? ?????ϴ?.
+[2022.03.08-03.42.38:484][477]CompilerResultsLog:   C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Source\client\NetworkManager.h(15): note: 'ANetworkManager' ?????? ?????Ͻʽÿ?.
+[2022.03.08-03.42.38:484][477]CompilerResultsLog:    C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Source\client\NetworkManager.cpp(39) : error C2597: ?????? ???? 'ANetworkManager::m_socket'?? ???? ?????? ?߸??Ǿ????ϴ?.
+[2022.03.08-03.42.38:484][477]CompilerResultsLog:   C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Source\client\NetworkManager.h(42): note: 'ANetworkManager::m_socket' ?????? ?????Ͻʽÿ?.
+[2022.03.08-03.42.38:484][477]LogMainFrame: MainFrame: Module compiling took 5.402 seconds
+[2022.03.08-03.42.38:484][477]Warning: HotReload failed, recompile failed
+[2022.03.08-03.43.32:957][273]Candidate modules for hot reload:
+[2022.03.08-03.43.32:957][273]  client
+[2022.03.08-03.43.32:957][273]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=client,7142 clientEditor Win64 Development -Project="C:/Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/client.uproject" "C:/Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/client.uproject"  -IgnoreJunk]
+[2022.03.08-03.43.32:960][273]Warning: Starting HotReload took  0.0s.
+[2022.03.08-03.43.43:308][456]CompilerResultsLog: New page: 컴파일 - 2022. 3. 8. 오후 9:43:43
+[2022.03.08-03.43.43:308][456]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT).
+[2022.03.08-03.43.43:308][456]CompilerResultsLog: Parsing headers for clientEditor
+[2022.03.08-03.43.43:308][456]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\client.uproject" "C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\clientEditor\Development\clientEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\minjoo.kim\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2022.03.08-03.43.43:308][456]CompilerResultsLog: LogInit: Display: Loading text-based GConfig....
+[2022.03.08-03.43.43:308][456]CompilerResultsLog: Reflection code generated for clientEditor in 2.8224746 seconds
+[2022.03.08-03.43.43:308][456]CompilerResultsLog: Building clientEditor...
+[2022.03.08-03.43.43:308][456]CompilerResultsLog: Using Visual Studio 2019 14.29.30140 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.03.08-03.43.43:308][456]CompilerResultsLog: Building 5 actions with 16 processes...
+[2022.03.08-03.43.43:308][456]CompilerResultsLog:   [1/5] NetworkManager.cpp
+[2022.03.08-03.43.43:308][456]CompilerResultsLog:   [2/5] NetworkManager.gen.cpp
+[2022.03.08-03.43.43:308][456]CompilerResultsLog:   [3/5] UE4Editor-client-7142.lib
+[2022.03.08-03.43.43:308][456]CompilerResultsLog:      C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-7142.lib ???̺귯?? ?? C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-7142.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.03.08-03.43.43:308][456]CompilerResultsLog:   [4/5] UE4Editor-client-7142.dll
+[2022.03.08-03.43.43:308][456]CompilerResultsLog:      C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-7142.suppressed.lib ???̺귯?? ?? C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-7142.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.03.08-03.43.43:308][456]CompilerResultsLog:   [5/5] clientEditor.target
+[2022.03.08-03.43.43:308][456]CompilerResultsLog: Total time in Parallel executor: 6.87 seconds
+[2022.03.08-03.43.43:308][456]CompilerResultsLog: Total execution time: 10.28 seconds
+[2022.03.08-03.43.43:308][456]LogMainFrame: MainFrame: Module compiling took 10.354 seconds
+[2022.03.08-03.43.43:318][456]LogClass: Could not find existing class NetworkManager in package /Script/client for HotReload, assuming new class
+[2022.03.08-03.43.43:318][456]LogClass: Function ConnectServer is new.
+[2022.03.08-03.43.43:318][456]LogClass: Function SendLogin is new.
+[2022.03.08-03.43.43:326][456]LogHotReload: Re-instancing NetworkManager after hot-reload.
+[2022.03.08-03.43.43:376][456]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'client' in 0.0002 seconds. Added 3 classes and 2 folders.
+[2022.03.08-03.43.43:380][456]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2022.03.08-03.43.43:513][456]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0067 seconds. Added 3825 classes and 930 folders.
+[2022.03.08-03.43.43:513][456]Display: HotReload took 10.6s.
+[2022.03.08-03.43.50:927][313]LogSlate: Window '메시지 로그' being destroyed
+[2022.03.08-03.43.50:932][313]LogSlate: Window '메시지 로그' being destroyed
+[2022.03.08-03.45.12:463][795]Candidate modules for hot reload:
+[2022.03.08-03.45.12:463][795]  client
+[2022.03.08-03.45.12:463][795]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=client,8656 clientEditor Win64 Development -Project="C:/Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/client.uproject" "C:/Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/client.uproject"  -IgnoreJunk]
+[2022.03.08-03.45.12:466][795]Warning: Starting HotReload took  0.0s.
+[2022.03.08-03.45.19:472][578]CompilerResultsLog: New page: 컴파일 - 2022. 3. 8. 오후 9:45:19
+[2022.03.08-03.45.19:473][578]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT).
+[2022.03.08-03.45.19:473][578]CompilerResultsLog: Building clientEditor...
+[2022.03.08-03.45.19:473][578]CompilerResultsLog: Using Visual Studio 2019 14.29.30140 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.03.08-03.45.19:473][578]CompilerResultsLog: Building 4 actions with 16 processes...
+[2022.03.08-03.45.19:473][578]CompilerResultsLog:   [1/4] NetworkManager.cpp
+[2022.03.08-03.45.19:473][578]CompilerResultsLog:   [2/4] UE4Editor-client-8656.lib
+[2022.03.08-03.45.19:473][578]CompilerResultsLog:      C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-8656.lib ???̺귯?? ?? C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-8656.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.03.08-03.45.19:473][578]CompilerResultsLog:   [3/4] UE4Editor-client-8656.dll
+[2022.03.08-03.45.19:473][578]CompilerResultsLog:      C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-8656.suppressed.lib ???̺귯?? ?? C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-8656.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.03.08-03.45.19:473][578]CompilerResultsLog:   [4/4] clientEditor.target
+[2022.03.08-03.45.19:473][578]CompilerResultsLog: Total time in Parallel executor: 6.49 seconds
+[2022.03.08-03.45.19:473][578]CompilerResultsLog: Total execution time: 6.94 seconds
+[2022.03.08-03.45.19:473][578]LogMainFrame: MainFrame: Module compiling took 7.013 seconds
+[2022.03.08-03.45.19:493][578]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'client' in 0.0002 seconds. Added 3 classes and 2 folders.
+[2022.03.08-03.45.19:498][578]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2022.03.08-03.45.19:656][578]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0066 seconds. Added 3825 classes and 930 folders.
+[2022.03.08-03.45.19:656][578]Display: HotReload took  7.2s.
+[2022.03.08-03.45.21:713][796]LogTemp: Repeating last play command: 새 에디터 창 (PIE)
+[2022.03.08-03.45.21:721][796]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.08-03.45.21:721][796]PIE: New page: PIE 세션: Minimal_Default (2022. 3. 8. 오후 9:45:21)
+[2022.03.08-03.45.21:721][796]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2022.03.08-03.45.21:731][796]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009684s)
+[2022.03.08-03.45.21:733][796]LogAIModule: Creating AISystem for world Minimal_Default
+[2022.03.08-03.45.21:733][796]LogPlayLevel: PIE: World Init took: (0.002284s)
+[2022.03.08-03.45.21:733][796]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.012061s)
+[2022.03.08-03.45.21:814][796]LogUObjectHash: Compacting FUObjectHashTables data took   4.46ms
+[2022.03.08-03.45.21:815][796]LogAudio: Display: Creating Audio Device:                 Id: 21, Scope: Unique, Realtime: True
+[2022.03.08-03.45.21:815][796]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.08-03.45.21:815][796]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.08-03.45.21:815][796]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.08-03.45.21:815][796]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.08-03.45.21:815][796]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.08-03.45.21:815][796]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.08-03.45.21:815][796]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.08-03.45.21:815][796]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.08-03.45.21:815][796]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.03.08-03.45.21:815][796]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.03.08-03.45.21:815][796]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.03.08-03.45.21:815][796]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.08-03.45.21:816][796]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.08-03.45.21:816][796]LogAudioMixer: Display: 1: FrontRight
+[2022.03.08-03.45.21:836][796]LogAudioMixer: Display: Using Audio Device 원격 오디오
+[2022.03.08-03.45.21:837][796]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.08-03.45.21:837][796]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.08-03.45.21:837][796]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.08-03.45.21:837][796]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.08-03.45.21:837][796]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.08-03.45.21:837][796]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.08-03.45.21:838][796]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.08-03.45.21:838][796]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.08-03.45.21:838][796]LogInit: FAudioDevice initialized.
+[2022.03.08-03.45.21:838][796]LogAudio: Display: Audio Device (ID: 21) registered with world 'Minimal_Default'.
+[2022.03.08-03.45.21:935][796]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.08-03.45.21:935][796]LogLoad: Game class is 'MenuGameMode_C'
+[2022.03.08-03.45.21:937][796]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2022.03.08-12.45.21
+[2022.03.08-03.45.21:937][796]LogWorld: Bringing up level for play took: 0.000529
+[2022.03.08-03.45.21:937][796]LogOnline: OSS: Creating online subsystem instance for: :Context_42
+[2022.03.08-03.45.21:939][796]LogTemp: network beginPlay
+[2022.03.08-03.45.21:941][796]PIE: 서버가 로그인했습니다.
+[2022.03.08-03.45.21:942][796]PIE: 에디터에서 플레이 총 시작 시간 0.224초입니다.
+[2022.03.08-03.45.38:009][706]LogTemp: Trying to connect!
+[2022.03.08-03.45.44:027][421]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.08-03.45.44:027][421]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2022.03.08-03.45.44:027][421]LogSlate: Window 'client 프리뷰 [NetMode: Standalone]  (64-bit/Windows)' being destroyed
+[2022.03.08-03.45.44:031][421]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2022.03.08-03.45.44:031][421]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.08-03.45.44:040][421]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.08-03.45.44:048][421]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.08-03.45.44:082][421]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.08-03.45.44:083][421]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.08-03.45.44:111][421]LogUObjectHash: Compacting FUObjectHashTables data took   3.51ms
+[2022.03.08-03.45.44:117][421]LogActorComponent: ReregisterComponent: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Starter_Background_Cue_2.AudioComponent0) Not currently registered. Aborting.
+[2022.03.08-03.45.44:133][422]LogPlayLevel: Display: Destroying online subsystem :Context_42
+[2022.03.08-03.47.17:468][354]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2022.03.08-03.47.17:485][354]LogEditorClassViewer: Warning: Class /Engine/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.IWBE_Blutility_C has parent /Script/Blutility.PlacedEditorUtilityBase, but this parent is not found. The Class will not be shown in ClassViewer.
+[2022.03.08-03.49.53:260][433]LogSlate: Window '변수 유형 변경' being destroyed
+[2022.03.08-03.50.37:249][497]LogPackageName: Error: DoesPackageExist: DoesPackageExist FAILED: '/Classes_Game/client/NetworkManager_Blueprint' is not a standard unreal filename or a long path name. Reason: 경로가 유효한 루트에서 시작하지 않습니다. 경로는 이렇게 시작해야 합니다: '/Engine/', '/Game/', '/Paper2D/', '/DatasmithContent/', '/AnimationSharing/', '/GeometryMode/', '/SpeedTreeImporter/', '/ChaosClothEditor/', '/ChaosNiagara/', '/ChaosSolverPlugin/', '/GeometryCollectionPlugin/', '/GeometryProcessing/', '/MotoSynth/', '/PythonScriptPlugin/', '/MagicLeap/', '/MagicLeapPassableWorld/', '/Niagara/', '/MediaCompositing/', '/AudioSynesthesia/', '/OpenXR/', '/OpenXRHandTracking/', '/OpenXREyeTracker/', '/PostSplashScreen/', '/Takes/', '/Synthesis/', '/OculusVR/', '/SteamVR/', '/Config/', '/Script/', '/Extra/', '/Memory/', or '/Temp/'
+[2022.03.08-03.50.37:252][498]LogPackageName: Error: DoesPackageExist: DoesPackageExist FAILED: '/Classes_Game/client/NetworkManager_Blueprint' is not a standard unreal filename or a long path name. Reason: 경로가 유효한 루트에서 시작하지 않습니다. 경로는 이렇게 시작해야 합니다: '/Engine/', '/Game/', '/Paper2D/', '/DatasmithContent/', '/AnimationSharing/', '/GeometryMode/', '/SpeedTreeImporter/', '/ChaosClothEditor/', '/ChaosNiagara/', '/ChaosSolverPlugin/', '/GeometryCollectionPlugin/', '/GeometryProcessing/', '/MotoSynth/', '/PythonScriptPlugin/', '/MagicLeap/', '/MagicLeapPassableWorld/', '/Niagara/', '/MediaCompositing/', '/AudioSynesthesia/', '/OpenXR/', '/OpenXRHandTracking/', '/OpenXREyeTracker/', '/PostSplashScreen/', '/Takes/', '/Synthesis/', '/OculusVR/', '/SteamVR/', '/Config/', '/Script/', '/Extra/', '/Memory/', or '/Temp/'
+[2022.03.08-03.51.07:758][ 98]LogPackageName: Error: DoesPackageExist: DoesPackageExist FAILED: '/Classes_Game/client/NetworkManager_Blueprint' is not a standard unreal filename or a long path name. Reason: 경로가 유효한 루트에서 시작하지 않습니다. 경로는 이렇게 시작해야 합니다: '/Engine/', '/Game/', '/Paper2D/', '/DatasmithContent/', '/AnimationSharing/', '/GeometryMode/', '/SpeedTreeImporter/', '/ChaosClothEditor/', '/ChaosNiagara/', '/ChaosSolverPlugin/', '/GeometryCollectionPlugin/', '/GeometryProcessing/', '/MotoSynth/', '/PythonScriptPlugin/', '/MagicLeap/', '/MagicLeapPassableWorld/', '/Niagara/', '/MediaCompositing/', '/AudioSynesthesia/', '/OpenXR/', '/OpenXRHandTracking/', '/OpenXREyeTracker/', '/PostSplashScreen/', '/Takes/', '/Synthesis/', '/OculusVR/', '/SteamVR/', '/Config/', '/Script/', '/Extra/', '/Memory/', or '/Temp/'
+[2022.03.08-03.51.07:760][ 99]LogPackageName: Error: DoesPackageExist: DoesPackageExist FAILED: '/Classes_Game/client/NetworkManager_Blueprint' is not a standard unreal filename or a long path name. Reason: 경로가 유효한 루트에서 시작하지 않습니다. 경로는 이렇게 시작해야 합니다: '/Engine/', '/Game/', '/Paper2D/', '/DatasmithContent/', '/AnimationSharing/', '/GeometryMode/', '/SpeedTreeImporter/', '/ChaosClothEditor/', '/ChaosNiagara/', '/ChaosSolverPlugin/', '/GeometryCollectionPlugin/', '/GeometryProcessing/', '/MotoSynth/', '/PythonScriptPlugin/', '/MagicLeap/', '/MagicLeapPassableWorld/', '/Niagara/', '/MediaCompositing/', '/AudioSynesthesia/', '/OpenXR/', '/OpenXRHandTracking/', '/OpenXREyeTracker/', '/PostSplashScreen/', '/Takes/', '/Synthesis/', '/OculusVR/', '/SteamVR/', '/Config/', '/Script/', '/Extra/', '/Memory/', or '/Temp/'
+[2022.03.08-03.52.31:968][301]LogUObjectHash: Compacting FUObjectHashTables data took   3.89ms
+[2022.03.08-03.52.31:972][301]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/StarterContent/Maps/Minimal_Default' took 0.039
+[2022.03.08-03.52.31:972][301]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/LoginMenu] ([2] browsable assets)...
+[2022.03.08-03.52.31:972][301]OBJ SavePackage: Finished generating thumbnails for package [/Game/LoginMenu]
+[2022.03.08-03.52.31:972][301]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/LoginMenu" FILE="../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/Autosaves/Game/LoginMenu_Auto7.uasset" SILENT=false AUTOSAVING=true
+[2022.03.08-03.52.31:983][301]LogSavePackage: Moving '../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/LoginMenu_Auto7A1D3D3B14A3E7B4E8759E994506CA555.tmp' to '../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/Autosaves/Game/LoginMenu_Auto7.uasset'
+[2022.03.08-03.52.31:983][301]LogFileHelpers: Auto-saving content packages took 0.011
+[2022.03.08-03.54.03:447][655]LogSlate: Window '변수 삭제' being destroyed
+[2022.03.08-03.58.46:961][943]LogPackageName: Error: DoesPackageExist: DoesPackageExist FAILED: '/Classes_Game/client/NetworkManager_Blueprint' is not a standard unreal filename or a long path name. Reason: 경로가 유효한 루트에서 시작하지 않습니다. 경로는 이렇게 시작해야 합니다: '/Engine/', '/Game/', '/Paper2D/', '/DatasmithContent/', '/AnimationSharing/', '/GeometryMode/', '/SpeedTreeImporter/', '/ChaosClothEditor/', '/ChaosNiagara/', '/ChaosSolverPlugin/', '/GeometryCollectionPlugin/', '/GeometryProcessing/', '/MotoSynth/', '/PythonScriptPlugin/', '/MagicLeap/', '/MagicLeapPassableWorld/', '/Niagara/', '/MediaCompositing/', '/AudioSynesthesia/', '/OpenXR/', '/OpenXRHandTracking/', '/OpenXREyeTracker/', '/PostSplashScreen/', '/Takes/', '/Synthesis/', '/OculusVR/', '/SteamVR/', '/Config/', '/Script/', '/Extra/', '/Memory/', or '/Temp/'
+[2022.03.08-03.58.46:962][944]LogPackageName: Error: DoesPackageExist: DoesPackageExist FAILED: '/Classes_Game/client/NetworkManager_Blueprint' is not a standard unreal filename or a long path name. Reason: 경로가 유효한 루트에서 시작하지 않습니다. 경로는 이렇게 시작해야 합니다: '/Engine/', '/Game/', '/Paper2D/', '/DatasmithContent/', '/AnimationSharing/', '/GeometryMode/', '/SpeedTreeImporter/', '/ChaosClothEditor/', '/ChaosNiagara/', '/ChaosSolverPlugin/', '/GeometryCollectionPlugin/', '/GeometryProcessing/', '/MotoSynth/', '/PythonScriptPlugin/', '/MagicLeap/', '/MagicLeapPassableWorld/', '/Niagara/', '/MediaCompositing/', '/AudioSynesthesia/', '/OpenXR/', '/OpenXRHandTracking/', '/OpenXREyeTracker/', '/PostSplashScreen/', '/Takes/', '/Synthesis/', '/OculusVR/', '/SteamVR/', '/Config/', '/Script/', '/Extra/', '/Memory/', or '/Temp/'
+[2022.03.08-03.59.39:733][193]LogWorld: UWorld::CleanupWorld for World_26, bSessionEnded=true, bCleanupResources=true
+[2022.03.08-03.59.39:733][193]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.08-04.00.29:160][932]BlueprintLog: New page: LoginMenu 컴파일
+[2022.03.08-04.00.29:233][932]LogUObjectHash: Compacting FUObjectHashTables data took   5.76ms
+[2022.03.08-04.02.32:160][426]LogUObjectHash: Compacting FUObjectHashTables data took   3.42ms
+[2022.03.08-04.02.32:164][426]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/StarterContent/Maps/Minimal_Default' took 0.079
+[2022.03.08-04.02.32:165][426]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StartMenu] ([2] browsable assets)...
+[2022.03.08-04.02.32:165][426]OBJ SavePackage: Finished generating thumbnails for package [/Game/StartMenu]
+[2022.03.08-04.02.32:165][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StartMenu" FILE="../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/Autosaves/Game/StartMenu_Auto8.uasset" SILENT=false AUTOSAVING=true
+[2022.03.08-04.02.32:175][426]LogSavePackage: Moving '../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/StartMenu_Auto87AC7192942BC3D9DDC220CA82B1F29EB.tmp' to '../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/Autosaves/Game/StartMenu_Auto8.uasset'
+[2022.03.08-04.02.32:176][426]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/LoginMenu] ([2] browsable assets)...
+[2022.03.08-04.02.32:176][426]OBJ SavePackage: Finished generating thumbnails for package [/Game/LoginMenu]
+[2022.03.08-04.02.32:176][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/LoginMenu" FILE="../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/Autosaves/Game/LoginMenu_Auto8.uasset" SILENT=false AUTOSAVING=true
+[2022.03.08-04.02.32:186][426]LogSavePackage: Moving '../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/LoginMenu_Auto81B812B1347C52D6BCE87D1996DC3553B.tmp' to '../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/Autosaves/Game/LoginMenu_Auto8.uasset'
+[2022.03.08-04.02.32:187][426]LogFileHelpers: Auto-saving content packages took 0.022
+[2022.03.08-04.04.56:390][317]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2022.03.08-04.04.56:404][317]LogEditorClassViewer: Warning: Class /Engine/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.IWBE_Blutility_C has parent /Script/Blutility.PlacedEditorUtilityBase, but this parent is not found. The Class will not be shown in ClassViewer.
+[2022.03.08-04.06.20:640][ 38]LogSlate: Window '변수 유형 변경' being destroyed
+[2022.03.08-04.06.40:660][ 83]BlueprintLog: New page: StartMenu 컴파일
+[2022.03.08-04.06.40:689][ 83]LogUObjectHash: Compacting FUObjectHashTables data took   2.37ms
+[2022.03.08-04.06.42:103][247]BlueprintLog: New page: StartMenu 컴파일
+[2022.03.08-04.06.42:130][247]LogUObjectHash: Compacting FUObjectHashTables data took   2.60ms
+[2022.03.08-04.06.42:713][315]BlueprintLog: New page: StartMenu 컴파일
+[2022.03.08-04.06.42:738][315]LogUObjectHash: Compacting FUObjectHashTables data took   2.52ms
+[2022.03.08-04.06.43:106][357]BlueprintLog: New page: StartMenu 컴파일
+[2022.03.08-04.06.43:132][357]LogUObjectHash: Compacting FUObjectHashTables data took   2.58ms
+[2022.03.08-04.07.20:179][636]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2022.03.08-04.07.20:192][636]LogEditorClassViewer: Warning: Class /Engine/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.IWBE_Blutility_C has parent /Script/Blutility.PlacedEditorUtilityBase, but this parent is not found. The Class will not be shown in ClassViewer.
+[2022.03.08-04.13.20:806][361]BlueprintLog: New page: LoginMenu 컴파일
+[2022.03.08-04.13.20:836][361]LogUObjectHash: Compacting FUObjectHashTables data took   3.07ms
+[2022.03.08-04.13.42:728][872]BlueprintLog: New page: LoginMenu 컴파일
+[2022.03.08-04.13.42:755][872]LogUObjectHash: Compacting FUObjectHashTables data took   3.28ms
+[2022.03.08-04.14.53:071][786]BlueprintLog: New page: LoginMenu 컴파일
+[2022.03.08-04.14.53:098][786]LogUObjectHash: Compacting FUObjectHashTables data took   2.76ms
+[2022.03.08-04.14.53:657][849]BlueprintLog: New page: LoginMenu 컴파일
+[2022.03.08-04.14.53:684][849]LogUObjectHash: Compacting FUObjectHashTables data took   2.66ms
+[2022.03.08-04.14.54:087][896]BlueprintLog: New page: LoginMenu 컴파일
+[2022.03.08-04.14.54:114][896]LogUObjectHash: Compacting FUObjectHashTables data took   3.07ms
+[2022.03.08-04.14.56:744][193]Candidate modules for hot reload:
+[2022.03.08-04.14.56:744][193]  client
+[2022.03.08-04.14.56:744][193]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=client,3174 clientEditor Win64 Development -Project="C:/Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/client.uproject" "C:/Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/client.uproject"  -IgnoreJunk]
+[2022.03.08-04.14.56:746][193]Warning: Starting HotReload took  0.0s.
+[2022.03.08-04.14.58:840][384]CompilerResultsLog: New page: 컴파일 - 2022. 3. 8. 오후 10:14:58
+[2022.03.08-04.14.58:840][384]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT).
+[2022.03.08-04.14.58:840][384]CompilerResultsLog: Building clientEditor...
+[2022.03.08-04.14.58:840][384]CompilerResultsLog: Using Visual Studio 2019 14.29.30140 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.03.08-04.14.58:840][384]CompilerResultsLog: Building 3 actions with 16 processes...
+[2022.03.08-04.14.58:840][384]CompilerResultsLog:   [1/3] UE4Editor-client-3174.lib
+[2022.03.08-04.14.58:840][384]CompilerResultsLog:      C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-3174.lib ???̺귯?? ?? C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-3174.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.03.08-04.14.58:840][384]CompilerResultsLog:   [2/3] UE4Editor-client-3174.dll
+[2022.03.08-04.14.58:840][384]CompilerResultsLog:      C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-3174.suppressed.lib ???̺귯?? ?? C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-3174.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.03.08-04.14.58:840][384]CompilerResultsLog:   [3/3] clientEditor.target
+[2022.03.08-04.14.58:840][384]CompilerResultsLog: Total time in Parallel executor: 1.53 seconds
+[2022.03.08-04.14.58:840][384]CompilerResultsLog: Total execution time: 2.00 seconds
+[2022.03.08-04.14.58:840][384]LogMainFrame: MainFrame: Module compiling took 2.099 seconds
+[2022.03.08-04.14.58:854][384]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'client' in 0.0002 seconds. Added 3 classes and 2 folders.
+[2022.03.08-04.14.58:859][384]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2022.03.08-04.14.58:963][384]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0065 seconds. Added 3825 classes and 930 folders.
+[2022.03.08-04.14.58:963][384]Display: HotReload took  2.2s.
+[2022.03.08-04.15.03:025][727]LogTemp: Repeating last play command: 새 에디터 창 (PIE)
+[2022.03.08-04.15.03:035][727]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.08-04.15.03:035][727]PIE: New page: PIE 세션: Minimal_Default (2022. 3. 8. 오후 10:15:03)
+[2022.03.08-04.15.03:035][727]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2022.03.08-04.15.03:037][727]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002012s)
+[2022.03.08-04.15.03:038][727]LogAIModule: Creating AISystem for world Minimal_Default
+[2022.03.08-04.15.03:038][727]LogPlayLevel: PIE: World Init took: (0.001040s)
+[2022.03.08-04.15.03:038][727]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.003154s)
+[2022.03.08-04.15.03:087][727]LogUObjectHash: Compacting FUObjectHashTables data took   3.40ms
+[2022.03.08-04.15.03:087][727]LogAudio: Display: Creating Audio Device:                 Id: 22, Scope: Unique, Realtime: True
+[2022.03.08-04.15.03:088][727]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.08-04.15.03:088][727]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.08-04.15.03:088][727]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.08-04.15.03:088][727]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.08-04.15.03:088][727]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.08-04.15.03:088][727]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.08-04.15.03:088][727]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.08-04.15.03:088][727]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.08-04.15.03:088][727]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.03.08-04.15.03:088][727]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.03.08-04.15.03:088][727]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.03.08-04.15.03:088][727]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.08-04.15.03:089][727]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.08-04.15.03:089][727]LogAudioMixer: Display: 1: FrontRight
+[2022.03.08-04.15.03:110][727]LogAudioMixer: Display: Using Audio Device 원격 오디오
+[2022.03.08-04.15.03:110][727]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.08-04.15.03:110][727]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.08-04.15.03:110][727]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.08-04.15.03:111][727]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.08-04.15.03:111][727]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.08-04.15.03:111][727]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.08-04.15.03:112][727]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.08-04.15.03:112][727]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.08-04.15.03:112][727]LogInit: FAudioDevice initialized.
+[2022.03.08-04.15.03:112][727]LogAudio: Display: Audio Device (ID: 22) registered with world 'Minimal_Default'.
+[2022.03.08-04.15.03:201][727]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.08-04.15.03:202][727]LogLoad: Game class is 'MenuGameMode_C'
+[2022.03.08-04.15.03:203][727]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2022.03.08-13.15.03
+[2022.03.08-04.15.03:203][727]LogWorld: Bringing up level for play took: 0.000607
+[2022.03.08-04.15.03:203][727]LogOnline: OSS: Creating online subsystem instance for: :Context_43
+[2022.03.08-04.15.03:205][727]LogTemp: network beginPlay
+[2022.03.08-04.15.03:207][727]PIE: 서버가 로그인했습니다.
+[2022.03.08-04.15.03:208][727]PIE: 에디터에서 플레이 총 시작 시간 0.174초입니다.
+[2022.03.08-04.15.13:271][913]LogTemp: Trying to connect!
+[2022.03.08-04.15.15:303][913]LogTemp: Trying to connect!
+[2022.03.08-04.15.24:362][609]LogTemp: Trying to connect!
+[2022.03.08-04.15.27:654][  4]LogTemp: send login!
+[2022.03.08-04.15.39:698][261]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.08-04.15.39:701][261]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2022.03.08-04.15.39:701][261]LogSlate: Window 'client 프리뷰 [NetMode: Standalone]  (64-bit/Windows)' being destroyed
+[2022.03.08-04.15.39:737][261]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2022.03.08-04.15.39:737][261]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.08-04.15.39:743][261]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.08-04.15.39:751][261]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.08-04.15.39:772][261]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.03.08-04.15.39:773][261]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.08-04.15.39:773][261]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.08-04.15.39:783][261]LogUObjectHash: Compacting FUObjectHashTables data took   2.96ms
+[2022.03.08-04.15.39:788][261]LogActorComponent: ReregisterComponent: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Starter_Background_Cue_2.AudioComponent0) Not currently registered. Aborting.
+[2022.03.08-04.15.39:814][262]LogPlayLevel: Display: Destroying online subsystem :Context_43
+[2022.03.08-04.16.05:035][547]LogUObjectHash: Compacting FUObjectHashTables data took   1.89ms
+[2022.03.08-04.16.05:035][547]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/StarterContent/Maps/Minimal_Default' took 0.022
+[2022.03.08-04.16.05:036][547]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/StartMenu] ([2] browsable assets)...
+[2022.03.08-04.16.05:036][547]OBJ SavePackage: Finished generating thumbnails for package [/Game/StartMenu]
+[2022.03.08-04.16.05:036][547]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StartMenu" FILE="../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/Autosaves/Game/StartMenu_Auto9.uasset" SILENT=false AUTOSAVING=true
+[2022.03.08-04.16.05:046][547]LogSavePackage: Moving '../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/StartMenu_Auto9248D10D94F06BBA7E24EEBB08CC29346.tmp' to '../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/Autosaves/Game/StartMenu_Auto9.uasset'
+[2022.03.08-04.16.05:047][547]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/LoginMenu] ([2] browsable assets)...
+[2022.03.08-04.16.05:047][547]OBJ SavePackage: Finished generating thumbnails for package [/Game/LoginMenu]
+[2022.03.08-04.16.05:047][547]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/LoginMenu" FILE="../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/Autosaves/Game/LoginMenu_Auto9.uasset" SILENT=false AUTOSAVING=true
+[2022.03.08-04.16.05:058][547]LogSavePackage: Moving '../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/LoginMenu_Auto9E3F3C72D4E754EBCB4A195A4E9C6AC12.tmp' to '../../../../../../Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/Saved/Autosaves/Game/LoginMenu_Auto9.uasset'
+[2022.03.08-04.16.05:059][547]LogFileHelpers: Auto-saving content packages took 0.023
+[2022.03.08-04.16.13:555][696]LogTemp: Repeating last play command: 새 에디터 창 (PIE)
+[2022.03.08-04.16.13:560][696]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.08-04.16.13:561][696]PIE: New page: PIE 세션: Minimal_Default (2022. 3. 8. 오후 10:16:13)
+[2022.03.08-04.16.13:561][696]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2022.03.08-04.16.13:563][696]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001980s)
+[2022.03.08-04.16.13:563][696]LogAIModule: Creating AISystem for world Minimal_Default
+[2022.03.08-04.16.13:564][696]LogPlayLevel: PIE: World Init took: (0.000776s)
+[2022.03.08-04.16.13:564][696]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.002844s)
+[2022.03.08-04.16.13:587][696]LogUObjectHash: Compacting FUObjectHashTables data took   2.08ms
+[2022.03.08-04.16.13:587][696]LogAudio: Display: Creating Audio Device:                 Id: 23, Scope: Unique, Realtime: True
+[2022.03.08-04.16.13:587][696]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.08-04.16.13:587][696]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.08-04.16.13:587][696]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.08-04.16.13:587][696]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.08-04.16.13:587][696]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.08-04.16.13:587][696]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.08-04.16.13:587][696]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.08-04.16.13:587][696]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.08-04.16.13:587][696]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.03.08-04.16.13:587][696]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.03.08-04.16.13:587][696]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.03.08-04.16.13:587][696]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.08-04.16.13:588][696]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.08-04.16.13:588][696]LogAudioMixer: Display: 1: FrontRight
+[2022.03.08-04.16.13:605][696]LogAudioMixer: Display: Using Audio Device 원격 오디오
+[2022.03.08-04.16.13:605][696]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.08-04.16.13:605][696]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.08-04.16.13:605][696]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.08-04.16.13:605][696]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.08-04.16.13:605][696]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.08-04.16.13:605][696]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.08-04.16.13:606][696]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.08-04.16.13:606][696]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.08-04.16.13:606][696]LogInit: FAudioDevice initialized.
+[2022.03.08-04.16.13:606][696]LogAudio: Display: Audio Device (ID: 23) registered with world 'Minimal_Default'.
+[2022.03.08-04.16.13:699][696]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.08-04.16.13:699][696]LogLoad: Game class is 'MenuGameMode_C'
+[2022.03.08-04.16.13:701][696]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2022.03.08-13.16.13
+[2022.03.08-04.16.13:701][696]LogWorld: Bringing up level for play took: 0.000562
+[2022.03.08-04.16.13:701][696]LogOnline: OSS: Creating online subsystem instance for: :Context_44
+[2022.03.08-04.16.13:703][696]LogTemp: network beginPlay
+[2022.03.08-04.16.13:704][696]PIE: 서버가 로그인했습니다.
+[2022.03.08-04.16.13:705][696]PIE: 에디터에서 플레이 총 시작 시간 0.146초입니다.
+[2022.03.08-04.16.20:475][488]LogTemp: Trying to connect!
+[2022.03.08-04.16.23:275][824]LogTemp: send login!
+[2022.03.08-04.17.35:330][160]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.08-04.17.35:330][160]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2022.03.08-04.17.35:330][160]LogSlate: Window 'client 프리뷰 [NetMode: Standalone]  (64-bit/Windows)' being destroyed
+[2022.03.08-04.17.35:333][160]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2022.03.08-04.17.35:333][160]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.08-04.17.35:343][160]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.08-04.17.35:352][160]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.08-04.17.35:372][160]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.08-04.17.35:373][160]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.08-04.17.35:381][160]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
+[2022.03.08-04.17.35:385][160]LogActorComponent: ReregisterComponent: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Starter_Background_Cue_2.AudioComponent0) Not currently registered. Aborting.
+[2022.03.08-04.17.35:402][161]LogPlayLevel: Display: Destroying online subsystem :Context_44
+[2022.03.08-04.17.35:802][197]Candidate modules for hot reload:
+[2022.03.08-04.17.35:802][197]  client
+[2022.03.08-04.17.35:802][197]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=client,5397 clientEditor Win64 Development -Project="C:/Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/client.uproject" "C:/Users/minjoo.kim/Desktop/chat/2022_CHAT_CLIENT/client/client.uproject"  -IgnoreJunk]
+[2022.03.08-04.17.35:804][197]Warning: Starting HotReload took  0.0s.
+[2022.03.08-04.17.42:501][745]CompilerResultsLog: New page: 컴파일 - 2022. 3. 8. 오후 10:17:42
+[2022.03.08-04.17.42:501][745]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT).
+[2022.03.08-04.17.42:501][745]CompilerResultsLog: Building clientEditor...
+[2022.03.08-04.17.42:501][745]CompilerResultsLog: Using Visual Studio 2019 14.29.30140 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.03.08-04.17.42:501][745]CompilerResultsLog: Building 4 actions with 16 processes...
+[2022.03.08-04.17.42:501][745]CompilerResultsLog:   [1/4] NetworkManager.cpp
+[2022.03.08-04.17.42:501][745]CompilerResultsLog:   [2/4] UE4Editor-client-5397.lib
+[2022.03.08-04.17.42:501][745]CompilerResultsLog:      C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-5397.lib ???̺귯?? ?? C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-5397.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.03.08-04.17.42:501][745]CompilerResultsLog:   [3/4] UE4Editor-client-5397.dll
+[2022.03.08-04.17.42:501][745]CompilerResultsLog:      C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-5397.suppressed.lib ???̺귯?? ?? C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-5397.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.03.08-04.17.42:501][745]CompilerResultsLog:   [4/4] clientEditor.target
+[2022.03.08-04.17.42:501][745]CompilerResultsLog: Total time in Parallel executor: 6.18 seconds
+[2022.03.08-04.17.42:501][745]CompilerResultsLog: Total execution time: 6.63 seconds
+[2022.03.08-04.17.42:501][745]LogMainFrame: MainFrame: Module compiling took 6.702 seconds
+[2022.03.08-04.17.42:517][745]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'client' in 0.0003 seconds. Added 3 classes and 2 folders.
+[2022.03.08-04.17.42:524][745]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2022.03.08-04.17.42:629][745]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0067 seconds. Added 3825 classes and 930 folders.
+[2022.03.08-04.17.42:629][745]Display: HotReload took  6.8s.
+[2022.03.08-04.18.43:144][228]LogTemp: Repeating last play command: 새 에디터 창 (PIE)
+[2022.03.08-04.18.43:152][228]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.08-04.18.43:152][228]PIE: New page: PIE 세션: Minimal_Default (2022. 3. 8. 오후 10:18:43)
+[2022.03.08-04.18.43:152][228]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2022.03.08-04.18.43:154][228]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001914s)
+[2022.03.08-04.18.43:155][228]LogAIModule: Creating AISystem for world Minimal_Default
+[2022.03.08-04.18.43:155][228]LogPlayLevel: PIE: World Init took: (0.000915s)
+[2022.03.08-04.18.43:155][228]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.002918s)
+[2022.03.08-04.18.43:212][228]LogUObjectHash: Compacting FUObjectHashTables data took   3.44ms
+[2022.03.08-04.18.43:213][228]LogAudio: Display: Creating Audio Device:                 Id: 24, Scope: Unique, Realtime: True
+[2022.03.08-04.18.43:213][228]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.08-04.18.43:213][228]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.08-04.18.43:213][228]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.08-04.18.43:213][228]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.08-04.18.43:213][228]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.08-04.18.43:213][228]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.08-04.18.43:213][228]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.08-04.18.43:213][228]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.08-04.18.43:213][228]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.03.08-04.18.43:213][228]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.03.08-04.18.43:213][228]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.03.08-04.18.43:213][228]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.08-04.18.43:214][228]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.08-04.18.43:214][228]LogAudioMixer: Display: 1: FrontRight
+[2022.03.08-04.18.43:234][228]LogAudioMixer: Display: Using Audio Device 원격 오디오
+[2022.03.08-04.18.43:234][228]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.08-04.18.43:234][228]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.08-04.18.43:234][228]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.08-04.18.43:234][228]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.08-04.18.43:234][228]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.08-04.18.43:234][228]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.08-04.18.43:235][228]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.08-04.18.43:235][228]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.08-04.18.43:235][228]LogInit: FAudioDevice initialized.
+[2022.03.08-04.18.43:235][228]LogAudio: Display: Audio Device (ID: 24) registered with world 'Minimal_Default'.
+[2022.03.08-04.18.43:323][228]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.08-04.18.43:323][228]LogLoad: Game class is 'MenuGameMode_C'
+[2022.03.08-04.18.43:324][228]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2022.03.08-13.18.43
+[2022.03.08-04.18.43:324][228]LogWorld: Bringing up level for play took: 0.000511
+[2022.03.08-04.18.43:324][228]LogOnline: OSS: Creating online subsystem instance for: :Context_45
+[2022.03.08-04.18.43:326][228]LogTemp: network beginPlay
+[2022.03.08-04.18.43:327][228]PIE: 서버가 로그인했습니다.
+[2022.03.08-04.18.43:328][228]PIE: 에디터에서 플레이 총 시작 시간 0.179초입니다.
+[2022.03.08-04.18.49:768][991]LogTemp: Trying to connect!
+[2022.03.08-04.18.51:660][218]LogTemp: send login!
+[2022.03.08-04.20.53:087][828]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.08-04.20.53:087][828]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2022.03.08-04.20.53:088][828]LogSlate: Window 'client 프리뷰 [NetMode: Standalone]  (64-bit/Windows)' being destroyed
+[2022.03.08-04.20.53:090][828]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2022.03.08-04.20.53:090][828]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.08-04.20.53:095][828]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.08-04.20.53:103][828]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.08-04.20.53:123][828]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.03.08-04.20.53:123][828]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.08-04.20.53:124][828]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.08-04.20.53:135][828]LogUObjectHash: Compacting FUObjectHashTables data took   3.59ms
+[2022.03.08-04.20.53:139][828]LogActorComponent: ReregisterComponent: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Starter_Background_Cue_2.AudioComponent0) Not currently registered. Aborting.
+[2022.03.08-04.20.53:169][830]LogPlayLevel: Display: Destroying online subsystem :Context_45
+[2022.03.08-04.58.11:331][832]LogTemp: Repeating last play command: 새 에디터 창 (PIE)
+[2022.03.08-04.58.11:340][832]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.08-04.58.11:340][832]PIE: New page: PIE 세션: Minimal_Default (2022. 3. 8. 오후 10:58:11)
+[2022.03.08-04.58.11:340][832]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2022.03.08-04.58.11:344][832]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003940s)
+[2022.03.08-04.58.11:346][832]LogAIModule: Creating AISystem for world Minimal_Default
+[2022.03.08-04.58.11:346][832]LogPlayLevel: PIE: World Init took: (0.001840s)
+[2022.03.08-04.58.11:346][832]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.005934s)
+[2022.03.08-04.58.11:386][832]LogUObjectHash: Compacting FUObjectHashTables data took   4.03ms
+[2022.03.08-04.58.11:391][832]LogAudio: Display: Creating Audio Device:                 Id: 25, Scope: Unique, Realtime: True
+[2022.03.08-04.58.11:391][832]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.08-04.58.11:391][832]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.08-04.58.11:391][832]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.08-04.58.11:391][832]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.08-04.58.11:391][832]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.08-04.58.11:391][832]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.08-04.58.11:391][832]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.08-04.58.11:391][832]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.08-04.58.11:391][832]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.03.08-04.58.11:391][832]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.03.08-04.58.11:391][832]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.03.08-04.58.11:391][832]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.08-04.58.11:393][832]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.08-04.58.11:393][832]LogAudioMixer: Display: 1: FrontRight
+[2022.03.08-04.58.11:413][832]LogAudioMixer: Display: Using Audio Device 원격 오디오
+[2022.03.08-04.58.11:414][832]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.08-04.58.11:414][832]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.08-04.58.11:414][832]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.08-04.58.11:415][832]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.08-04.58.11:415][832]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.08-04.58.11:415][832]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.08-04.58.11:416][832]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.08-04.58.11:416][832]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.08-04.58.11:416][832]LogInit: FAudioDevice initialized.
+[2022.03.08-04.58.11:416][832]LogAudio: Display: Audio Device (ID: 25) registered with world 'Minimal_Default'.
+[2022.03.08-04.58.11:506][832]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.08-04.58.11:506][832]LogLoad: Game class is 'MenuGameMode_C'
+[2022.03.08-04.58.11:508][832]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2022.03.08-13.58.11
+[2022.03.08-04.58.11:508][832]LogWorld: Bringing up level for play took: 0.000631
+[2022.03.08-04.58.11:508][832]LogOnline: OSS: Creating online subsystem instance for: :Context_46
+[2022.03.08-04.58.11:510][832]LogTemp: network beginPlay
+[2022.03.08-04.58.11:512][832]PIE: 서버가 로그인했습니다.
+[2022.03.08-04.58.11:513][832]PIE: 에디터에서 플레이 총 시작 시간 0.176초입니다.
+[2022.03.08-04.58.18:758][683]LogTemp: Trying to connect!
+[2022.03.08-04.58.23:441][240]LogTemp: send login!
+[2022.03.08-04.58.37:887][400]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.08-04.58.37:890][400]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2022.03.08-04.58.37:890][400]LogSlate: Window 'client 프리뷰 [NetMode: Standalone]  (64-bit/Windows)' being destroyed
+[2022.03.08-04.58.37:896][400]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2022.03.08-04.58.37:896][400]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.08-04.58.37:902][400]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.08-04.58.37:911][400]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.08-04.58.37:932][400]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.08-04.58.37:933][400]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.08-04.58.37:941][400]LogUObjectHash: Compacting FUObjectHashTables data took   2.45ms
+[2022.03.08-04.58.37:945][400]LogActorComponent: ReregisterComponent: (/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Starter_Background_Cue_2.AudioComponent0) Not currently registered. Aborting.
+[2022.03.08-04.58.38:228][401]LogPlayLevel: Display: Destroying online subsystem :Context_46

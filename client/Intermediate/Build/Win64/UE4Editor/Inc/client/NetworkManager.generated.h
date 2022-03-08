@@ -16,11 +16,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define client_Source_client_NetworkManager_h_17_SPARSE_DATA
 #define client_Source_client_NetworkManager_h_17_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execSendLogin); \
 	DECLARE_FUNCTION(execConnectServer);
 
 
 #define client_Source_client_NetworkManager_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execSendLogin); \
 	DECLARE_FUNCTION(execConnectServer);
 
 
