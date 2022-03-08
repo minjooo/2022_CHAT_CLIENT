@@ -2,11 +2,6 @@
 
 
 #include "NetworkManager.h"
-#include "Engine.h"
-#include "Networking.h"
-#include "Sockets.h"
-#include "SocketSubsystem.h"
-#include "Networking/Public/Interfaces/IPv4/IPv4Address.h"
 
 // Sets default values
 ANetworkManager::ANetworkManager()
@@ -16,13 +11,13 @@ ANetworkManager::ANetworkManager()
 
 }
 
-void ANetworkManager::ConnectServer()
+bool ANetworkManager::ConnectServer(const FString& add, const int32& po)
 {
-	FSocket* socket = ISocketSubsystem::Get(PLATFORM_SOCKETSUBSYSTEM)->CreateSocket(NAME_Stream, TEXT("default"), false);
+	socket = ISocketSubsystem::Get(PLATFORM_SOCKETSUBSYSTEM)->CreateSocket(NAME_Stream, TEXT("default"), false);
 
-	FString address = TEXT("127.0.0.1");
-	int32 port = 3500;
-	
+	FString address = add;
+	int32 port = po;
+
 	FIPv4Address ip;
 	FIPv4Address::Parse(address, ip);
 
@@ -31,15 +26,39 @@ void ANetworkManager::ConnectServer()
 	addr->SetPort(port);
 
 	UE_LOG(LogTemp, Log, TEXT("Trying to connect!"));
+	return socket->Connect(*addr);
+}
 
-	bool connected = socket->Connect(*addr);
+bool ANetworkManager::SendMsg(FSocket* Socket, const FString& Msg)
+{
+	check(Socket);
+	int32 BytesSent = 0;
+	return Socket->Send((uint8*)TCHAR_TO_UTF8(*Msg), Msg.Len(), BytesSent);
+}
+
+bool ANetworkManager::RecvMsg(FSocket* Socket, uint32 DataSize, FString& Msg)
+{
+	check(Socket);
+
+	//FArrayReaderPtr Datagram = MakeShareable(new FArrayReader(true));
+	//Datagram->Init(FMath::Min(DataSize, 65507u));
+	//
+	//int32 BytesRead = 0;
+	//if (Socket->Recv(Datagram->GetData(), Datagram->Num(), BytesRead))
+	//{
+	//	char* Data = (char*)Datagram->GetData();
+	//	Data[BytesRead] = '\0';
+	//	Msg = UTF8_TO_TCHAR(Data);
+	//	return true;
+	//}
+	return false;
 }
 
 // Called when the game starts or when spawned
 void ANetworkManager::BeginPlay()
 {
 	Super::BeginPlay();
-	UE_LOG(LogTemp, Log, TEXT("inin"));
+	UE_LOG(LogTemp, Log, TEXT("network beginPlay"));
 }
 
 // Called every frame

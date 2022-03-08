@@ -20,9 +20,11 @@ void EmptyLinkFunctionForGeneratedCodeNetworkManager() {}
 // End Cross Module References
 	DEFINE_FUNCTION(ANetworkManager::execConnectServer)
 	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_address);
+		P_GET_PROPERTY_REF(FIntProperty,Z_Param_Out_port);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->ConnectServer();
+		*(bool*)Z_Param__Result=P_THIS->ConnectServer(Z_Param_address,Z_Param_Out_port);
 		P_NATIVE_END;
 	}
 	void ANetworkManager::StaticRegisterNativesANetworkManager()
@@ -35,10 +37,49 @@ void EmptyLinkFunctionForGeneratedCodeNetworkManager() {}
 	}
 	struct Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics
 	{
+		struct NetworkManager_eventConnectServer_Parms
+		{
+			FString address;
+			int32 port;
+			bool ReturnValue;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_address_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_address;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_port_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_port;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::NewProp_address_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::NewProp_address = { "address", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(NetworkManager_eventConnectServer_Parms, address), METADATA_PARAMS(Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::NewProp_address_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::NewProp_address_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::NewProp_port_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::NewProp_port = { "port", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(NetworkManager_eventConnectServer_Parms, port), METADATA_PARAMS(Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::NewProp_port_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::NewProp_port_MetaData)) };
+	void Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((NetworkManager_eventConnectServer_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(NetworkManager_eventConnectServer_Parms), &Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::NewProp_address,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::NewProp_port,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::Function_MetaDataParams[] = {
@@ -46,7 +87,7 @@ void EmptyLinkFunctionForGeneratedCodeNetworkManager() {}
 		{ "ModuleRelativePath", "NetworkManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ANetworkManager, nullptr, "ConnectServer", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ANetworkManager, nullptr, "ConnectServer", nullptr, nullptr, sizeof(NetworkManager_eventConnectServer_Parms), Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ANetworkManager_ConnectServer_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_ANetworkManager_ConnectServer()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -75,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeNetworkManager() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_client,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ANetworkManager_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ANetworkManager_ConnectServer, "ConnectServer" }, // 2322657927
+		{ &Z_Construct_UFunction_ANetworkManager_ConnectServer, "ConnectServer" }, // 298715243
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANetworkManager_Statics::Class_MetaDataParams[] = {
@@ -110,7 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeNetworkManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANetworkManager, 922758559);
+	IMPLEMENT_CLASS(ANetworkManager, 46456842);
 	template<> CLIENT_API UClass* StaticClass<ANetworkManager>()
 	{
 		return ANetworkManager::StaticClass();
