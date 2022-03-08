@@ -26,7 +26,11 @@ bool ANetworkManager::ConnectServer(const FString& add, const int32& po)
 	addr->SetPort(port);
 
 	UE_LOG(LogTemp, Log, TEXT("Trying to connect!"));
-	return m_socket->Connect(*addr);
+	bool res = m_socket->Connect(*addr);
+
+	m_recvThread = new std::thread(&ANetworkManager::RecvMsg, this);
+
+	return res;
 }
 
 void ANetworkManager::SendLogin(const FString& name)
@@ -38,6 +42,38 @@ void ANetworkManager::SendLogin(const FString& name)
 	SendMsg(str);
 }
 
+void ANetworkManager::SendUserList()
+{
+	FString str = "us\r\n";
+	UE_LOG(LogTemp, Log, TEXT("send user list!"));
+	SendMsg(str);
+}
+
+void ANetworkManager::SendRoomList()
+{
+	FString str = "lt\r\n";
+	UE_LOG(LogTemp, Log, TEXT("send room list!"));
+	SendMsg(str);
+}
+
+void ANetworkManager::SendRoomInfo(const FString& id)
+{
+	FString str = "st ";
+	str += id;
+	str += "\r\n";
+	UE_LOG(LogTemp, Log, TEXT("send room info!"));
+	SendMsg(str);
+}
+
+void ANetworkManager::SendJoin(const FString& id)
+{
+	FString str = "j ";
+	str += id;
+	str += "\r\n";
+	UE_LOG(LogTemp, Log, TEXT("send join!"));
+	SendMsg(str);
+}
+
 bool ANetworkManager::SendMsg(const FString& Msg)
 {
 	check(m_socket);
@@ -45,22 +81,22 @@ bool ANetworkManager::SendMsg(const FString& Msg)
 	return m_socket->Send((uint8*)TCHAR_TO_UTF8(*Msg), Msg.Len(), BytesSent);
 }
 
-bool ANetworkManager::RecvMsg(FSocket* Socket, uint32 DataSize, FString& Msg)
+void ANetworkManager::RecvMsg()
 {
-	check(Socket);
+	check(m_socket);
+	UE_LOG(LogTemp, Log, TEXT("recv thread start"));
 
-	//FArrayReaderPtr Datagram = MakeShareable(new FArrayReader(true));
-	//Datagram->Init(FMath::Min(DataSize, 65507u));
-	//
-	//int32 BytesRead = 0;
-	//if (Socket->Recv(Datagram->GetData(), Datagram->Num(), BytesRead))
-	//{
-	//	char* Data = (char*)Datagram->GetData();
-	//	Data[BytesRead] = '\0';
-	//	Msg = UTF8_TO_TCHAR(Data);
-	//	return true;
-	//}
-	return false;
+	uint8	Datagram[maxBuffer];
+	uint32	DataSize{ 0 };
+	while (true)
+	{
+		int32 BytesRead = 0;
+		if (m_socket->Recv(Datagram, maxBuffer, BytesRead))
+		{
+			Datagram[BytesRead] = '\0';
+			UE_LOG(LogTemp, Log, TEXT("recv: %s"), Datagram);
+		}
+	}
 }
 
 // Called when the game starts or when spawned
