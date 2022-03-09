@@ -27,7 +27,7 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, Category = "MsgHandler")
 		void RoomList(const TArray<FString>& msg);
 	UFUNCTION(BlueprintImplementableEvent, Category = "MsgHandler")
-		void UserList();
+		void UserList(const TArray<FString>& msg);
 
 protected:
 	// Called when the game starts or when spawned

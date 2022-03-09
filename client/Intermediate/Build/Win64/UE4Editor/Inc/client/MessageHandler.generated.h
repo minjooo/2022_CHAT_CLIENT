@@ -24,6 +24,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	struct MessageHandler_eventRoomList_Parms \
 	{ \
 		TArray<FString> msg; \
+	}; \
+	struct MessageHandler_eventUserList_Parms \
+	{ \
+		TArray<FString> msg; \
 	};
 
 

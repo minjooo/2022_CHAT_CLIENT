@@ -59,7 +59,16 @@ void AMessageHandler::Process(FString& msg)
 		//not main menu
 		else if (arr[ArrayNum] == Message::userList)
 		{
-			UserList();
+			TArray<FString> farr;
+			int32 tmp = ArrayNum + 1;
+			while (arr[tmp] != Message::line)
+			{
+				farr.Add(arr[tmp]);
+				++tmp;
+				if (tmp + 1 == arr.Num())break;
+			}
+			ArrayNum = tmp;
+			UserList(farr);
 		}
 		else if (arr[ArrayNum] == Message::roomList)
 		{
@@ -81,7 +90,6 @@ void AMessageHandler::Process(FString& msg)
 		//main chatbox
 		else
 		{
-			UE_LOG(LogTemp, Log, TEXT("채팅창에 쓰고싶다"));
 			OnChat(arr[ArrayNum]);
 		}
 	}
