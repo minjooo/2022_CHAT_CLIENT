@@ -88,3 +88,5 @@ Build/Android/res/*/*
 # Ignore plugins binaries on deep subfolders
 Plugins/**/Binaries/*
 Plugins/**/Intermediate/*
+client/Saved/Logs/client-backup-2022.03.09-01.22.18.log
+client/Saved/Logs/client-backup-2022.03.09-01.46.32.log

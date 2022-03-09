@@ -13,8 +13,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define CLIENT_NetworkManager_generated_h
 
-#define client_Source_client_NetworkManager_h_19_SPARSE_DATA
-#define client_Source_client_NetworkManager_h_19_RPC_WRAPPERS \
+#define client_Source_client_NetworkManager_h_53_SPARSE_DATA
+#define client_Source_client_NetworkManager_h_53_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execSendJoin); \
 	DECLARE_FUNCTION(execSendRoomInfo); \
@@ -24,7 +24,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execConnectServer);
 
 
-#define client_Source_client_NetworkManager_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+#define client_Source_client_NetworkManager_h_53_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execSendJoin); \
 	DECLARE_FUNCTION(execSendRoomInfo); \
@@ -34,7 +34,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execConnectServer);
 
 
-#define client_Source_client_NetworkManager_h_19_INCLASS_NO_PURE_DECLS \
+#define client_Source_client_NetworkManager_h_53_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesANetworkManager(); \
 	friend struct Z_Construct_UClass_ANetworkManager_Statics; \
@@ -43,7 +43,7 @@ public: \
 	DECLARE_SERIALIZER(ANetworkManager)
 
 
-#define client_Source_client_NetworkManager_h_19_INCLASS \
+#define client_Source_client_NetworkManager_h_53_INCLASS \
 private: \
 	static void StaticRegisterNativesANetworkManager(); \
 	friend struct Z_Construct_UClass_ANetworkManager_Statics; \
@@ -52,7 +52,7 @@ public: \
 	DECLARE_SERIALIZER(ANetworkManager)
 
 
-#define client_Source_client_NetworkManager_h_19_STANDARD_CONSTRUCTORS \
+#define client_Source_client_NetworkManager_h_53_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ANetworkManager(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ANetworkManager) \
@@ -65,7 +65,7 @@ private: \
 public:
 
 
-#define client_Source_client_NetworkManager_h_19_ENHANCED_CONSTRUCTORS \
+#define client_Source_client_NetworkManager_h_53_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ANetworkManager(ANetworkManager&&); \
@@ -76,28 +76,28 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ANetworkManager)
 
 
-#define client_Source_client_NetworkManager_h_19_PRIVATE_PROPERTY_OFFSET
-#define client_Source_client_NetworkManager_h_16_PROLOG
-#define client_Source_client_NetworkManager_h_19_GENERATED_BODY_LEGACY \
+#define client_Source_client_NetworkManager_h_53_PRIVATE_PROPERTY_OFFSET
+#define client_Source_client_NetworkManager_h_50_PROLOG
+#define client_Source_client_NetworkManager_h_53_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	client_Source_client_NetworkManager_h_19_PRIVATE_PROPERTY_OFFSET \
-	client_Source_client_NetworkManager_h_19_SPARSE_DATA \
-	client_Source_client_NetworkManager_h_19_RPC_WRAPPERS \
-	client_Source_client_NetworkManager_h_19_INCLASS \
-	client_Source_client_NetworkManager_h_19_STANDARD_CONSTRUCTORS \
+	client_Source_client_NetworkManager_h_53_PRIVATE_PROPERTY_OFFSET \
+	client_Source_client_NetworkManager_h_53_SPARSE_DATA \
+	client_Source_client_NetworkManager_h_53_RPC_WRAPPERS \
+	client_Source_client_NetworkManager_h_53_INCLASS \
+	client_Source_client_NetworkManager_h_53_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define client_Source_client_NetworkManager_h_19_GENERATED_BODY \
+#define client_Source_client_NetworkManager_h_53_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	client_Source_client_NetworkManager_h_19_PRIVATE_PROPERTY_OFFSET \
-	client_Source_client_NetworkManager_h_19_SPARSE_DATA \
-	client_Source_client_NetworkManager_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
-	client_Source_client_NetworkManager_h_19_INCLASS_NO_PURE_DECLS \
-	client_Source_client_NetworkManager_h_19_ENHANCED_CONSTRUCTORS \
+	client_Source_client_NetworkManager_h_53_PRIVATE_PROPERTY_OFFSET \
+	client_Source_client_NetworkManager_h_53_SPARSE_DATA \
+	client_Source_client_NetworkManager_h_53_RPC_WRAPPERS_NO_PURE_DECLS \
+	client_Source_client_NetworkManager_h_53_INCLASS_NO_PURE_DECLS \
+	client_Source_client_NetworkManager_h_53_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

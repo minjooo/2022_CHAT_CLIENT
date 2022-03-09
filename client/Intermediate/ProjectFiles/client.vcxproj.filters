@@ -54,4 +54,9 @@
       <Filter>Source\client</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="const.h">
+      <Filter>Source\client</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

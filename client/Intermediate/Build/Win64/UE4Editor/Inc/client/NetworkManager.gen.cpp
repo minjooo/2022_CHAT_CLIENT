@@ -337,8 +337,10 @@ void EmptyLinkFunctionForGeneratedCodeNetworkManager() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANetworkManager_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/*\nstd::wstring MbsToWcs(std::string const& str, std::locale const& loc = std::locale())\n{\n\x09typedef std::codecvt<wchar_t, char, std::mbstate_t> codecvt_t;\n\x09""codecvt_t const& codecvt = std::use_facet<codecvt_t>(loc);\n\x09std::mbstate_t state{ 0 };\n\x09std::vector<wchar_t> buf(str.size() + 1);\n\x09""char const* in_next = str.c_str();\n\x09wchar_t* out_next = &buf[0];\n\x09""codecvt_t::result r = codecvt.in(state, \n\x09\x09str.c_str(), str.c_str() + str.size(), in_next, \n\x09\x09&buf[0], &buf[0] + buf.size(), out_next);\n\x09return std::wstring(&buf[0]);\n}\n\nstd::string WcsToMbs(std::wstring const& str, std::locale const& loc = std::locale())\n{\n\x09typedef std::codecvt<wchar_t, char, std::mbstate_t> codecvt_t;\n\x09""codecvt_t const& codecvt = std::use_facet<codecvt_t>(loc);\n\x09std::mbstate_t state{ 0 };\n\x09std::vector<char> buf((str.size() + 1) * codecvt.max_length());\n\x09wchar_t const* in_next = str.c_str();\n\x09""char* out_next = &buf[0];\n\x09""codecvt_t::result r = codecvt.out(state,\n\x09\x09str.c_str(), str.c_str() + str.size(),in_next, \n\x09\x09&buf[0], &buf[0] + buf.size(), out_next);\n\x09return std::string(&buf[0]);\n}\n*/" },
 		{ "IncludePath", "NetworkManager.h" },
 		{ "ModuleRelativePath", "NetworkManager.h" },
+		{ "ToolTip", "std::wstring MbsToWcs(std::string const& str, std::locale const& loc = std::locale())\n{\n       typedef std::codecvt<wchar_t, char, std::mbstate_t> codecvt_t;\n       codecvt_t const& codecvt = std::use_facet<codecvt_t>(loc);\n       std::mbstate_t state{ 0 };\n       std::vector<wchar_t> buf(str.size() + 1);\n       char const* in_next = str.c_str();\n       wchar_t* out_next = &buf[0];\n       codecvt_t::result r = codecvt.in(state,\n               str.c_str(), str.c_str() + str.size(), in_next,\n               &buf[0], &buf[0] + buf.size(), out_next);\n       return std::wstring(&buf[0]);\n}\n\nstd::string WcsToMbs(std::wstring const& str, std::locale const& loc = std::locale())\n{\n       typedef std::codecvt<wchar_t, char, std::mbstate_t> codecvt_t;\n       codecvt_t const& codecvt = std::use_facet<codecvt_t>(loc);\n       std::mbstate_t state{ 0 };\n       std::vector<char> buf((str.size() + 1) * codecvt.max_length());\n       wchar_t const* in_next = str.c_str();\n       char* out_next = &buf[0];\n       codecvt_t::result r = codecvt.out(state,\n               str.c_str(), str.c_str() + str.size(),in_next,\n               &buf[0], &buf[0] + buf.size(), out_next);\n       return std::string(&buf[0]);\n}" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ANetworkManager_Statics::StaticCppClassTypeInfo = {
@@ -368,7 +370,7 @@ void EmptyLinkFunctionForGeneratedCodeNetworkManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANetworkManager, 443334901);
+	IMPLEMENT_CLASS(ANetworkManager, 2134912613);
 	template<> CLIENT_API UClass* StaticClass<ANetworkManager>()
 	{
 		return ANetworkManager::StaticClass();

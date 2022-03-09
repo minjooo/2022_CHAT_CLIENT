@@ -2,6 +2,10 @@
 
 #pragma once
 #include <thread>
+#include <string>
+#include <vector>
+#include <locale>
+#include <functional>
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Engine.h"
@@ -12,6 +16,36 @@
 #include "NetworkManager.generated.h"
 
 constexpr int32	maxBuffer = 1024;
+/*
+std::wstring MbsToWcs(std::string const& str, std::locale const& loc = std::locale())
+{
+	typedef std::codecvt<wchar_t, char, std::mbstate_t> codecvt_t;
+	codecvt_t const& codecvt = std::use_facet<codecvt_t>(loc);
+	std::mbstate_t state{ 0 };
+	std::vector<wchar_t> buf(str.size() + 1);
+	char const* in_next = str.c_str();
+	wchar_t* out_next = &buf[0];
+	codecvt_t::result r = codecvt.in(state, 
+		str.c_str(), str.c_str() + str.size(), in_next, 
+		&buf[0], &buf[0] + buf.size(), out_next);
+	return std::wstring(&buf[0]);
+}
+
+std::string WcsToMbs(std::wstring const& str, std::locale const& loc = std::locale())
+{
+	typedef std::codecvt<wchar_t, char, std::mbstate_t> codecvt_t;
+	codecvt_t const& codecvt = std::use_facet<codecvt_t>(loc);
+	std::mbstate_t state{ 0 };
+	std::vector<char> buf((str.size() + 1) * codecvt.max_length());
+	wchar_t const* in_next = str.c_str();
+	char* out_next = &buf[0];
+	codecvt_t::result r = codecvt.out(state,
+		str.c_str(), str.c_str() + str.size(),in_next, 
+		&buf[0], &buf[0] + buf.size(), out_next);
+	return std::string(&buf[0]);
+}
+*/
+
 
 UCLASS()
 class CLIENT_API ANetworkManager : public AActor
@@ -21,6 +55,12 @@ class CLIENT_API ANetworkManager : public AActor
 public:	
 	// Sets default values for this actor's properties
 	ANetworkManager();
+	~ANetworkManager();
+
+public:
+	std::wstring MbsToWcs( std::string const& str, std::locale const& loc );
+	std::string WcsToMbs( std::wstring const& str, std::locale const& loc );
+
 
 public:
 	UFUNCTION(BlueprintCallable, Category = "Network")
@@ -50,7 +90,9 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	void RecvMsg();
-	bool SendMsg(const FString& Msg);
+	bool SendMsg(FString& Msg);
+
+	void StringHandler();
 
 protected:
 	FSocket*			m_socket;

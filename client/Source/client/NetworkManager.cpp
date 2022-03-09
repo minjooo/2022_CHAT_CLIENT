@@ -2,6 +2,10 @@
 
 
 #include "NetworkManager.h"
+#include "Windows/AllowWindowsPlatformTypes.h"
+#include <codecvt>
+#include <Windows.h>
+#include <wchar.h>
 
 // Sets default values
 ANetworkManager::ANetworkManager()
@@ -9,6 +13,38 @@ ANetworkManager::ANetworkManager()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+}
+
+ANetworkManager::~ANetworkManager()
+{
+}
+
+std::wstring ANetworkManager::MbsToWcs(std::string const& str, std::locale const& loc = std::locale())
+{
+	typedef std::codecvt<wchar_t, char, std::mbstate_t> codecvt_t;
+	codecvt_t const& codecvt = std::use_facet<codecvt_t>(loc);
+	std::mbstate_t state{ 0 };
+	std::vector<wchar_t> buf(str.size() + 1);
+	char const* in_next = str.c_str();
+	wchar_t* out_next = &buf[0];
+	codecvt_t::result r = codecvt.in(state,
+		str.c_str(), str.c_str() + str.size(), in_next,
+		&buf[0], &buf[0] + buf.size(), out_next);
+	return std::wstring(&buf[0]);
+}
+
+std::string ANetworkManager::WcsToMbs(std::wstring const& str, std::locale const& loc = std::locale())
+{
+	typedef std::codecvt<wchar_t, char, std::mbstate_t> codecvt_t;
+	codecvt_t const& codecvt = std::use_facet<codecvt_t>(loc);
+	std::mbstate_t state{ 0 };
+	std::vector<char> buf((str.size() + 1) * codecvt.max_length());
+	wchar_t const* in_next = str.c_str();
+	char* out_next = &buf[0];
+	codecvt_t::result r = codecvt.out(state,
+		str.c_str(), str.c_str() + str.size(), in_next,
+		&buf[0], &buf[0] + buf.size(), out_next);
+	return std::string(&buf[0]);
 }
 
 bool ANetworkManager::ConnectServer(const FString& add, const int32& po)
@@ -74,11 +110,18 @@ void ANetworkManager::SendJoin(const FString& id)
 	SendMsg(str);
 }
 
-bool ANetworkManager::SendMsg(const FString& Msg)
+bool ANetworkManager::SendMsg(FString& Msg)
 {
 	check(m_socket);
 	int32 BytesSent = 0;
-	return m_socket->Send((uint8*)TCHAR_TO_UTF8(*Msg), Msg.Len(), BytesSent);
+
+	wchar_t* uni = reinterpret_cast<wchar_t*>((uint8*)(*Msg));
+	char* mul;
+	int len = WideCharToMultiByte(CP_ACP, 0, uni, -1, NULL, 0, NULL, NULL);
+	mul = new CHAR[len];
+	WideCharToMultiByte(CP_ACP, 0, uni, -1, mul, len, NULL, NULL);
+
+	return m_socket->Send((uint8*)(mul), len, BytesSent);
 }
 
 void ANetworkManager::RecvMsg()
@@ -91,10 +134,19 @@ void ANetworkManager::RecvMsg()
 	while (true)
 	{
 		int32 BytesRead = 0;
-		if (m_socket->Recv(Datagram, maxBuffer, BytesRead))
+		if (m_socket->Recv(Datagram, maxBuffer-1, BytesRead))
 		{
-			Datagram[BytesRead] = '\0';
-			UE_LOG(LogTemp, Log, TEXT("recv: %s"), Datagram);
+			if (BytesRead != 0)
+			{
+				char* mul = reinterpret_cast<char*>(Datagram);
+				wchar_t* uni;
+				int len = MultiByteToWideChar(CP_ACP, 0, mul, strlen(mul) + 1, NULL, NULL);
+				uni = new WCHAR[len];
+				MultiByteToWideChar(CP_ACP, 0, mul, strlen(mul) + 1, uni, len);
+
+				UE_LOG(LogTemp, Log, TEXT("받음 : %s"), uni);
+				m_msgQueue.Enqueue(uni);
+			}
 		}
 	}
 }
@@ -111,5 +163,21 @@ void ANetworkManager::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if (!m_msgQueue.IsEmpty())
+	{
+		FString str = "";
+		m_msgQueue.Dequeue(str);
+	}
+	//TArray<FString> arr;
+	//FString str = BytesToString(Datagram, BytesRead);
+	////유니코드로 변환 필요
+	//
+	////UE_LOG(LogTemp, Log, TEXT("받음 : %s"), tc);
+	//str.ParseIntoArray(arr, TEXT("\r\n"));
+	//
+	//for (int32 ArrayNum = 0; ArrayNum < arr.Num(); ++ArrayNum)
+	//{
+	//	m_msgQueue.Enqueue(arr[ArrayNum]);
+	//}
 }
 
