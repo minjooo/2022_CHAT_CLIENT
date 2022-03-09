@@ -6,50 +6,25 @@
 #include <codecvt>
 #include <Windows.h>
 #include <wchar.h>
+#include "MessageHandler.h"
 
 // Sets default values
 ANetworkManager::ANetworkManager()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	m_msgHandler = NewObject<AMessageHandler>();
 }
 
 ANetworkManager::~ANetworkManager()
 {
-}
-
-std::wstring ANetworkManager::MbsToWcs(std::string const& str, std::locale const& loc = std::locale())
-{
-	typedef std::codecvt<wchar_t, char, std::mbstate_t> codecvt_t;
-	codecvt_t const& codecvt = std::use_facet<codecvt_t>(loc);
-	std::mbstate_t state{ 0 };
-	std::vector<wchar_t> buf(str.size() + 1);
-	char const* in_next = str.c_str();
-	wchar_t* out_next = &buf[0];
-	codecvt_t::result r = codecvt.in(state,
-		str.c_str(), str.c_str() + str.size(), in_next,
-		&buf[0], &buf[0] + buf.size(), out_next);
-	return std::wstring(&buf[0]);
-}
-
-std::string ANetworkManager::WcsToMbs(std::wstring const& str, std::locale const& loc = std::locale())
-{
-	typedef std::codecvt<wchar_t, char, std::mbstate_t> codecvt_t;
-	codecvt_t const& codecvt = std::use_facet<codecvt_t>(loc);
-	std::mbstate_t state{ 0 };
-	std::vector<char> buf((str.size() + 1) * codecvt.max_length());
-	wchar_t const* in_next = str.c_str();
-	char* out_next = &buf[0];
-	codecvt_t::result r = codecvt.out(state,
-		str.c_str(), str.c_str() + str.size(), in_next,
-		&buf[0], &buf[0] + buf.size(), out_next);
-	return std::string(&buf[0]);
+	m_msgHandler = nullptr;
 }
 
 bool ANetworkManager::ConnectServer(const FString& add, const int32& po)
 {
 	m_socket = ISocketSubsystem::Get(PLATFORM_SOCKETSUBSYSTEM)->CreateSocket(NAME_Stream, TEXT("default"), false);
+	if (m_socket == nullptr)return false;
 
 	FString address = add;
 	int32 port = po;
@@ -110,8 +85,36 @@ void ANetworkManager::SendJoin(const FString& id)
 	SendMsg(str);
 }
 
+void ANetworkManager::SendExit()
+{
+	FString str = "xx \r\n";
+	UE_LOG(LogTemp, Log, TEXT("send exit!"));
+	SendMsg(str);
+}
+
+void ANetworkManager::SendChat(const FString& command)
+{
+	FString str = command;
+	str += "\r\n";
+	UE_LOG(LogTemp, Log, TEXT("send text!"));
+	SendMsg(str);
+}
+
+void ANetworkManager::SendMakeRoom(const FString& name, const FString& max)
+{
+	FString str = "o ";
+	str += max;
+	str += " ";
+	str += name;
+	str += "\r\n";
+	UE_LOG(LogTemp, Log, TEXT("send make room!"));
+	SendMsg(str);
+}
+
+
 bool ANetworkManager::SendMsg(FString& Msg)
 {
+	if (m_socket == nullptr)return false;
 	check(m_socket);
 	int32 BytesSent = 0;
 
@@ -126,6 +129,7 @@ bool ANetworkManager::SendMsg(FString& Msg)
 
 void ANetworkManager::RecvMsg()
 {
+	if (m_socket == nullptr)return;
 	check(m_socket);
 	UE_LOG(LogTemp, Log, TEXT("recv thread start"));
 
@@ -144,8 +148,8 @@ void ANetworkManager::RecvMsg()
 				uni = new WCHAR[len];
 				MultiByteToWideChar(CP_ACP, 0, mul, strlen(mul) + 1, uni, len);
 
-				UE_LOG(LogTemp, Log, TEXT("받음 : %s"), uni);
 				m_msgQueue.Enqueue(uni);
+				memset(Datagram, 0, maxBuffer);
 			}
 		}
 	}
@@ -166,18 +170,16 @@ void ANetworkManager::Tick(float DeltaTime)
 	if (!m_msgQueue.IsEmpty())
 	{
 		FString str = "";
-		m_msgQueue.Dequeue(str);
+		while (!m_msgQueue.IsEmpty())
+		{
+			FString tmp = "";
+			m_msgQueue.Peek(tmp);
+			str += tmp;
+			m_msgQueue.Pop();
+		}
+		//UE_LOG(LogTemp, Log, TEXT("받음2 : %s"), *str);
+		m_msgHandler->Process(str);
+		str.Reset();
 	}
-	//TArray<FString> arr;
-	//FString str = BytesToString(Datagram, BytesRead);
-	////유니코드로 변환 필요
-	//
-	////UE_LOG(LogTemp, Log, TEXT("받음 : %s"), tc);
-	//str.ParseIntoArray(arr, TEXT("\r\n"));
-	//
-	//for (int32 ArrayNum = 0; ArrayNum < arr.Num(); ++ArrayNum)
-	//{
-	//	m_msgQueue.Enqueue(arr[ArrayNum]);
-	//}
 }
 
