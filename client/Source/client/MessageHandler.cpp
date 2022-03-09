@@ -28,10 +28,35 @@ void AMessageHandler::Process(FString& msg)
 
 	for (int32 ArrayNum = 0; ArrayNum < arr.Num(); ++ArrayNum)
 	{
-		if (arr[ArrayNum] == Message::alreadyExistName)
+		//ignore
+		if (arr[ArrayNum] == Message::help)
 		{
-			LoginFail();
+			if (ArrayNum + 4 > arr.Num())
+				break;
+			else
+				ArrayNum += 3;
 		}
+		else if (arr[ArrayNum] == Message::bye)
+		{
+			if (ArrayNum + 4 > arr.Num())
+				break;
+			else
+				ArrayNum += 3;
+		}
+		else if (arr[ArrayNum] == Message::hi)
+		{
+			if (ArrayNum + 11 > arr.Num())
+				break;
+			else
+				ArrayNum += 10;
+		}
+		else if (arr[ArrayNum] == Message::basic)
+		{
+		}
+		else if (arr[ArrayNum] == Message::login)
+		{
+		}
+		//not main menu
 		else if (arr[ArrayNum] == Message::userList)
 		{
 			UserList();
@@ -40,18 +65,11 @@ void AMessageHandler::Process(FString& msg)
 		{
 			RoomList();
 		}
-		else if (arr[ArrayNum] == Message::login)
+		else if (arr[ArrayNum] == Message::alreadyExistName)
 		{
-			break;//일단
+			LoginFail();
 		}
-		else if (arr[ArrayNum] == Message::basic)
-		{
-			break;//일단
-		}
-		else if (arr[ArrayNum] == Message::line)
-		{
-			break;//일단..
-		}
+		//main chatbox
 		else
 		{
 			UE_LOG(LogTemp, Log, TEXT("채팅창에 쓰고싶다"));
