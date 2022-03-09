@@ -18,12 +18,15 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "UMG_CHAT")
 		void ChangeMenuWeidget(TSubclassOf<UUserWidget> NewWidgetClass);
 
+	UFUNCTION(BlueprintCallable, Category = "UMG_CHAT")
+		UUserWidget* GetCurMenuWeidget();
+
 protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UMG_CHAT")
 		TSubclassOf< UUserWidget> startingWidgtClass;
 
-	UPROPERTY()
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UMG_CHAT")
 		UUserWidget* CurrentWidget;
 };

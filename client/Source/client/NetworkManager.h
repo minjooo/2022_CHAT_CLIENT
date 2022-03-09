@@ -69,9 +69,11 @@ public:
 	void RecvMsg();
 	bool SendMsg(FString& Msg);
 
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		AMessageHandler* m_msgHandler;
 
 protected:
-	AMessageHandler*	m_msgHandler;
 	FSocket*			m_socket;
 	TQueue<FString>		m_msgQueue;
 	std::thread*		m_recvThread;

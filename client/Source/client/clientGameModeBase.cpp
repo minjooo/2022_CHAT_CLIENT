@@ -27,3 +27,8 @@ void AclientGameModeBase::ChangeMenuWeidget(TSubclassOf<UUserWidget> NewWidgetCl
 		}
 	}
 }
+
+UUserWidget* AclientGameModeBase::GetCurMenuWeidget()
+{
+	return CurrentWidget;
+}

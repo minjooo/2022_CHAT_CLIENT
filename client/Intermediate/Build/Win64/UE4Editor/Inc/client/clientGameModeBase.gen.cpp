@@ -20,6 +20,13 @@ void EmptyLinkFunctionForGeneratedCodeclientGameModeBase() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AclientGameModeBase::execGetCurMenuWeidget)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UUserWidget**)Z_Param__Result=P_THIS->GetCurMenuWeidget();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AclientGameModeBase::execChangeMenuWeidget)
 	{
 		P_GET_OBJECT(UClass,Z_Param_NewWidgetClass);
@@ -33,6 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeclientGameModeBase() {}
 		UClass* Class = AclientGameModeBase::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "ChangeMenuWeidget", &AclientGameModeBase::execChangeMenuWeidget },
+			{ "GetCurMenuWeidget", &AclientGameModeBase::execGetCurMenuWeidget },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -69,6 +77,47 @@ void EmptyLinkFunctionForGeneratedCodeclientGameModeBase() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AclientGameModeBase_GetCurMenuWeidget_Statics
+	{
+		struct clientGameModeBase_eventGetCurMenuWeidget_Parms
+		{
+			UUserWidget* ReturnValue;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AclientGameModeBase_GetCurMenuWeidget_Statics::NewProp_ReturnValue_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AclientGameModeBase_GetCurMenuWeidget_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(clientGameModeBase_eventGetCurMenuWeidget_Parms, ReturnValue), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AclientGameModeBase_GetCurMenuWeidget_Statics::NewProp_ReturnValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AclientGameModeBase_GetCurMenuWeidget_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AclientGameModeBase_GetCurMenuWeidget_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AclientGameModeBase_GetCurMenuWeidget_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AclientGameModeBase_GetCurMenuWeidget_Statics::Function_MetaDataParams[] = {
+		{ "Category", "UMG_CHAT" },
+		{ "ModuleRelativePath", "clientGameModeBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AclientGameModeBase_GetCurMenuWeidget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AclientGameModeBase, nullptr, "GetCurMenuWeidget", nullptr, nullptr, sizeof(clientGameModeBase_eventGetCurMenuWeidget_Parms), Z_Construct_UFunction_AclientGameModeBase_GetCurMenuWeidget_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AclientGameModeBase_GetCurMenuWeidget_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AclientGameModeBase_GetCurMenuWeidget_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AclientGameModeBase_GetCurMenuWeidget_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AclientGameModeBase_GetCurMenuWeidget()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AclientGameModeBase_GetCurMenuWeidget_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AclientGameModeBase_NoRegister()
 	{
 		return AclientGameModeBase::StaticClass();
@@ -98,6 +147,7 @@ void EmptyLinkFunctionForGeneratedCodeclientGameModeBase() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AclientGameModeBase_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AclientGameModeBase_ChangeMenuWeidget, "ChangeMenuWeidget" }, // 2056511454
+		{ &Z_Construct_UFunction_AclientGameModeBase_GetCurMenuWeidget, "GetCurMenuWeidget" }, // 2853211810
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AclientGameModeBase_Statics::Class_MetaDataParams[] = {
@@ -117,11 +167,12 @@ void EmptyLinkFunctionForGeneratedCodeclientGameModeBase() {}
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AclientGameModeBase_Statics::NewProp_startingWidgtClass = { "startingWidgtClass", nullptr, (EPropertyFlags)0x0024080000000015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AclientGameModeBase, startingWidgtClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AclientGameModeBase_Statics::NewProp_startingWidgtClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AclientGameModeBase_Statics::NewProp_startingWidgtClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AclientGameModeBase_Statics::NewProp_CurrentWidget_MetaData[] = {
+		{ "Category", "UMG_CHAT" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "clientGameModeBase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AclientGameModeBase_Statics::NewProp_CurrentWidget = { "CurrentWidget", nullptr, (EPropertyFlags)0x0020080000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AclientGameModeBase, CurrentWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AclientGameModeBase_Statics::NewProp_CurrentWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AclientGameModeBase_Statics::NewProp_CurrentWidget_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AclientGameModeBase_Statics::NewProp_CurrentWidget = { "CurrentWidget", nullptr, (EPropertyFlags)0x002008000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AclientGameModeBase, CurrentWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AclientGameModeBase_Statics::NewProp_CurrentWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AclientGameModeBase_Statics::NewProp_CurrentWidget_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AclientGameModeBase_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AclientGameModeBase_Statics::NewProp_startingWidgtClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AclientGameModeBase_Statics::NewProp_CurrentWidget,
@@ -153,7 +204,7 @@ void EmptyLinkFunctionForGeneratedCodeclientGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AclientGameModeBase, 1219521692);
+	IMPLEMENT_CLASS(AclientGameModeBase, 822121163);
 	template<> CLIENT_API UClass* StaticClass<AclientGameModeBase>()
 	{
 		return AclientGameModeBase::StaticClass();

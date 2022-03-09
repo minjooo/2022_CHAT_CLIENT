@@ -16,7 +16,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define client_Source_client_MessageHandler_h_12_SPARSE_DATA
 #define client_Source_client_MessageHandler_h_12_RPC_WRAPPERS
 #define client_Source_client_MessageHandler_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define client_Source_client_MessageHandler_h_12_EVENT_PARMS
+#define client_Source_client_MessageHandler_h_12_EVENT_PARMS \
+	struct MessageHandler_eventOnChat_Parms \
+	{ \
+		FString msg; \
+	};
+
+
 #define client_Source_client_MessageHandler_h_12_CALLBACK_WRAPPERS
 #define client_Source_client_MessageHandler_h_12_INCLASS_NO_PURE_DECLS \
 private: \

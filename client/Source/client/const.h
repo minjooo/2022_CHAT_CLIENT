@@ -2,39 +2,35 @@
 
 #pragma once
 #include <string>
+#include "Containers/UnrealString.h"
 
 namespace Message
 {
-	const std::string basic =
-		"¸í·É¾î¾È³»(H) Á¾·á(X)\r\n";
+	const FString basic = L"ëª…ë ¹ì–´ì•ˆë‚´(H) ì¢…ë£Œ(X)";
 
-	const std::string login =
-		"** ·Î±×ÀÎ ¸í·É¾î(LOGIN [ID])À» »ç¿ëÇØÁÖ¼¼¿ä\r\n";
+	const FString login = L"** ë¡œê·¸ì¸ ëª…ë ¹ì–´(LOGIN [ID])ì„ ì‚¬ìš©í•´ì£¼ì„¸ìš”";
 
-	const std::string line =
-		"---------------------------------------------------------------\r\n";
+	const FString line = L"---------------------------------------------------------------";
 
-	const std::string userList = 
-		"------------------------- »ç¶÷µé ¸ñ·Ï -------------------------\r\n";
+	const FString userList = L"------------------------- ì‚¬ëŒë“¤ ëª©ë¡ -------------------------";
 
-	const std::string roomList = 
-		"------------------------- ´ëÈ­¹æ ¸ñ·Ï -------------------------\r\n";
+	const FString roomList = L"------------------------- ëŒ€í™”ë°© ëª©ë¡ -------------------------";
 
-	const std::string roomInfo =
-		"------------------------- ´ëÈ­¹æ Á¤º¸ -------------------------\r\n";
+	const FString roomInfo = L"------------------------- ëŒ€í™”ë°© ì •ë³´ -------------------------";
 
-	const std::string invite = "** ÃÊ´ë ¿äÃ»À» Çß½À´Ï´Ù.\r\n";
+	const FString invite = L"** ì´ˆëŒ€ ìš”ì²­ì„ í–ˆìŠµë‹ˆë‹¤.";
 
-	const std::string alreadyExistName = "** ÀÌ¹Ì Á¸ÀçÇÏ´Â ¾ÆÀÌµğÀÔ´Ï´Ù.\r\n";
+	const FString alreadyExistName = L"** ì´ë¯¸ ì¡´ì¬í•˜ëŠ” ì•„ì´ë””ì…ë‹ˆë‹¤.";
+	//
 
-	const std::string notExistUser = "** Á¸ÀçÇÏÁö ¾Ê´Â ¾ÆÀÌµğÀÔ´Ï´Ù.\r\n";
+	const FString notExistUser = L"** ì¡´ì¬í•˜ì§€ ì•ŠëŠ” ì•„ì´ë””ì…ë‹ˆë‹¤.";
 
-	const std::string notExistRoom = "** Á¸ÀçÇÏÁö ¾Ê´Â ¹æÀÔ´Ï´Ù.\r\n";
+	const FString notExistRoom = L"** ì¡´ì¬í•˜ì§€ ì•ŠëŠ” ë°©ì…ë‹ˆë‹¤.";
 
-	const std::string roomFull = "** ¹æÀÌ °¡µæÃ¡½À´Ï´Ù.\r\n";
+	const FString roomFull = L"** ë°©ì´ ê°€ë“ì°¼ìŠµë‹ˆë‹¤.";
 
-	const std::string notFullCommand = "** Ä¿¸àµå¸¦ ´Ù½Ã È®ÀÎÇØÁÖ¼¼¿ä.\r\n";
+	const FString notFullCommand = L"** ì»¤ë©˜ë“œë¥¼ ë‹¤ì‹œ í™•ì¸í•´ì£¼ì„¸ìš”.";
 
-	const std::string notExistCommand = "** Á¸ÀçÇÏÁö ¾Ê´Â Ä¿¸àÆ®ÀÔ´Ï´Ù.\r\n";
+	const FString notExistCommand = L"** ì¡´ì¬í•˜ì§€ ì•ŠëŠ” ì»¤ë©˜íŠ¸ì…ë‹ˆë‹¤.";
 
 }

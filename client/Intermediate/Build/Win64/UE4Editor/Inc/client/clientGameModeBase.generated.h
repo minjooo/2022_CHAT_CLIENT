@@ -17,11 +17,13 @@ class UUserWidget;
 #define client_Source_client_clientGameModeBase_h_15_SPARSE_DATA
 #define client_Source_client_clientGameModeBase_h_15_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetCurMenuWeidget); \
 	DECLARE_FUNCTION(execChangeMenuWeidget);
 
 
 #define client_Source_client_clientGameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetCurMenuWeidget); \
 	DECLARE_FUNCTION(execChangeMenuWeidget);
 
 

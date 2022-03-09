@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\client.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{6935E2A8-E4FF-4B0D-BB4F-5F7A74F8CBB8}</UniqueIdentifier>
+      <UniqueIdentifier>{C066BBBC-5D61-4B3A-9B7C-D516284AC073}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\client.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{A883C4FE-FAC2-4F88-ACC4-B97B1AB7F3F7}</UniqueIdentifier>
+      <UniqueIdentifier>{AA32F814-2244-4E01-9939-E432C96BCAE3}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,7 +24,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\client">
-      <UniqueIdentifier>{E72B7E1D-C87B-444D-963B-DF53B547BA21}</UniqueIdentifier>
+      <UniqueIdentifier>{BB3F4DF8-AD1F-4263-BB70-32D495892C84}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\client\client.Build.cs">
       <Filter>Source\client</Filter>
@@ -39,6 +39,9 @@
       <Filter>Source\client</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\client\clientGameModeBase.h">
+      <Filter>Source\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\client\const.h">
       <Filter>Source\client</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\client\MessageHandler.cpp">
@@ -57,11 +60,6 @@
       <Filter>Source\client</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\client\UMGPlayerController.h">
-      <Filter>Source\client</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="const.h">
       <Filter>Source\client</Filter>
     </ClInclude>
   </ItemGroup>

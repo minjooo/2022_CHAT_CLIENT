@@ -19,8 +19,14 @@ public:
 	void Process(FString& msg);
 
 public:
-	UFUNCTION(BlueprintImplementableEvent)
-		void OnChat();
+	UFUNCTION(BlueprintImplementableEvent, Category = "MsgHandler")
+		void OnChat(const FString& msg);
+	UFUNCTION(BlueprintImplementableEvent, Category = "MsgHandler")
+		void LoginFail();
+	UFUNCTION(BlueprintImplementableEvent, Category = "MsgHandler")
+		void RoomList();
+	UFUNCTION(BlueprintImplementableEvent, Category = "MsgHandler")
+		void UserList();
 
 protected:
 	// Called when the game starts or when spawned
