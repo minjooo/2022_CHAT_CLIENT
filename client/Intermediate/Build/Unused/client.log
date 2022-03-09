@@ -1,15 +1,19 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT).
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-2477.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-2477.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-2477.lib
+  Parsing headers for clientEditor
+    Running UnrealHeaderTool "C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\client.uproject" "C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\clientEditor\Development\clientEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\minjoo.kim\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  LogInit: Display: Loading text-based GConfig....
+  Reflection code generated for clientEditor in 2.6714736 seconds
   Building clientEditor...
   Using Visual Studio 2019 14.29.30140 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 16 processes...
-    [1/4] MessageHandler.cpp
-    [2/4] UE4Editor-client.lib
-       C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client.lib 라이브러리 및 C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client.exp 개체를 생성하고 있습니다.
-    [3/4] UE4Editor-client.dll
-       C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client.suppressed.lib 라이브러리 및 C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client.suppressed.exp 개체를 생성하고 있습니다.
-    [4/4] clientEditor.target
-  Total time in Parallel executor: 1.15 seconds
-  Total execution time: 1.54 seconds
+  Building 7 actions with 16 processes...
+    [1/7] client.init.gen.cpp
+    [2/7] MessageHandler.gen.cpp
+    [3/7] MessageHandler.cpp
+    [4/7] NetworkManager.cpp
+    [5/7] UE4Editor-client-0021.lib
+       C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-0021.lib 라이브러리 및 C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-0021.exp 개체를 생성하고 있습니다.
+    [6/7] UE4Editor-client-0021.dll
+       C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-0021.suppressed.lib 라이브러리 및 C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-0021.suppressed.exp 개체를 생성하고 있습니다.
+    [7/7] clientEditor.target
+  Total time in Parallel executor: 6.60 seconds
+  Total execution time: 9.78 seconds

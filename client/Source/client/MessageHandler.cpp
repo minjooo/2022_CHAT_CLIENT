@@ -63,7 +63,16 @@ void AMessageHandler::Process(FString& msg)
 		}
 		else if (arr[ArrayNum] == Message::roomList)
 		{
-			RoomList();
+			TArray<FString> farr;
+			int32 tmp = ArrayNum + 1;
+			while (arr[tmp] != Message::line)
+			{
+				farr.Add(arr[tmp]);
+				++tmp;
+				if (tmp + 1 == arr.Num())break;
+			}
+			ArrayNum = tmp;
+			RoomList(farr);
 		}
 		else if (arr[ArrayNum] == Message::alreadyExistName)
 		{

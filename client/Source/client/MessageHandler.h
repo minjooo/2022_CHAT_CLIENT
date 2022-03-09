@@ -25,7 +25,7 @@ public:
 		void LoginFail();
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "MsgHandler")
-		void RoomList();
+		void RoomList(const TArray<FString>& msg);
 	UFUNCTION(BlueprintImplementableEvent, Category = "MsgHandler")
 		void UserList();
 

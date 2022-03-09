@@ -54,14 +54,14 @@ void ANetworkManager::SendLogin(const FString& name)
 
 void ANetworkManager::SendUserList()
 {
-	FString str = "us\r\n";
+	FString str = "/us\r\n";
 	UE_LOG(LogTemp, Log, TEXT("send user list!"));
 	SendMsg(str);
 }
 
 void ANetworkManager::SendRoomList()
 {
-	FString str = "lt\r\n";
+	FString str = "/lt\r\n";
 	UE_LOG(LogTemp, Log, TEXT("send room list!"));
 	SendMsg(str);
 }

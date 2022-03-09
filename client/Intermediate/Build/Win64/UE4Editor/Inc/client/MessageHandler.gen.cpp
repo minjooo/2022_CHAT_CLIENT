@@ -31,9 +31,11 @@ void EmptyLinkFunctionForGeneratedCodeMessageHandler() {}
 		ProcessEvent(FindFunctionChecked(NAME_AMessageHandler_OnChat),&Parms);
 	}
 	static FName NAME_AMessageHandler_RoomList = FName(TEXT("RoomList"));
-	void AMessageHandler::RoomList()
+	void AMessageHandler::RoomList(TArray<FString> const& msg)
 	{
-		ProcessEvent(FindFunctionChecked(NAME_AMessageHandler_RoomList),NULL);
+		MessageHandler_eventRoomList_Parms Parms;
+		Parms.msg=msg;
+		ProcessEvent(FindFunctionChecked(NAME_AMessageHandler_RoomList),&Parms);
 	}
 	static FName NAME_AMessageHandler_UserList = FName(TEXT("UserList"));
 	void AMessageHandler::UserList()
@@ -105,10 +107,27 @@ void EmptyLinkFunctionForGeneratedCodeMessageHandler() {}
 	}
 	struct Z_Construct_UFunction_AMessageHandler_RoomList_Statics
 	{
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_msg_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_msg_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_msg;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AMessageHandler_RoomList_Statics::NewProp_msg_Inner = { "msg", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMessageHandler_RoomList_Statics::NewProp_msg_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AMessageHandler_RoomList_Statics::NewProp_msg = { "msg", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(MessageHandler_eventRoomList_Parms, msg), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UFunction_AMessageHandler_RoomList_Statics::NewProp_msg_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AMessageHandler_RoomList_Statics::NewProp_msg_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMessageHandler_RoomList_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMessageHandler_RoomList_Statics::NewProp_msg_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMessageHandler_RoomList_Statics::NewProp_msg,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMessageHandler_RoomList_Statics::Function_MetaDataParams[] = {
@@ -116,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeMessageHandler() {}
 		{ "ModuleRelativePath", "MessageHandler.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMessageHandler_RoomList_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMessageHandler, nullptr, "RoomList", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMessageHandler_RoomList_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMessageHandler_RoomList_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMessageHandler_RoomList_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMessageHandler, nullptr, "RoomList", nullptr, nullptr, sizeof(MessageHandler_eventRoomList_Parms), Z_Construct_UFunction_AMessageHandler_RoomList_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMessageHandler_RoomList_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMessageHandler_RoomList_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMessageHandler_RoomList_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_AMessageHandler_RoomList()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -170,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeMessageHandler() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMessageHandler_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AMessageHandler_LoginFail, "LoginFail" }, // 3221302584
 		{ &Z_Construct_UFunction_AMessageHandler_OnChat, "OnChat" }, // 3633282945
-		{ &Z_Construct_UFunction_AMessageHandler_RoomList, "RoomList" }, // 1443488520
+		{ &Z_Construct_UFunction_AMessageHandler_RoomList, "RoomList" }, // 998749149
 		{ &Z_Construct_UFunction_AMessageHandler_UserList, "UserList" }, // 1867558323
 	};
 #if WITH_METADATA
@@ -206,7 +225,7 @@ void EmptyLinkFunctionForGeneratedCodeMessageHandler() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMessageHandler, 2432702133);
+	IMPLEMENT_CLASS(AMessageHandler, 1559067491);
 	template<> CLIENT_API UClass* StaticClass<AMessageHandler>()
 	{
 		return AMessageHandler::StaticClass();
