@@ -80,7 +80,7 @@ void ANetworkManager::SendJoin(const FString& id)
 	FString str = "j ";
 	str += id;
 	str += "\r\n";
-	UE_LOG(LogTemp, Log, TEXT("send join!"));
+	UE_LOG(LogTemp, Log, TEXT("send join! + %s"), *id);
 	SendMsg(str);
 }
 
