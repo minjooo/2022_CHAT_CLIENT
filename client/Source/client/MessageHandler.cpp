@@ -9,7 +9,7 @@ AMessageHandler::AMessageHandler()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	m_lesString = "";
 }
 
 // Called when the game starts or when spawned
@@ -21,16 +21,30 @@ void AMessageHandler::BeginPlay()
 
 void AMessageHandler::Process(FString& msg)
 {
-	//UE_LOG(LogTemp, Log, TEXT("프로세스 들어옴 : % s"), *msg);
+	msg = m_lesString + msg;
+	m_lesString.Reset();
+	if (msg[msg.Len() - 1] == 127)
+	{
+		msg.RemoveAt(msg.Len() - 1);
+	}
+
+	FString checkPacket = "c";
+	msg += checkPacket;
 
 	TArray<FString> arr;
-	//if(arr[arr.Num()-1].fin)
 	msg.ParseIntoArray(arr, TEXT("\r\n"));
-	for (auto& i : arr)
+
+	//잘려서 들어옴
+	if (arr[arr.Num() - 1] != checkPacket)
 	{
-		UE_LOG(LogTemp, Log, TEXT("받음11 : %s"), *i);
+		m_lesString = arr[arr.Num() - 1];
+		arr.RemoveAt(arr.Num() - 1);
+		arr.RemoveAt(arr.Num() - 1);
 	}
-	UE_LOG(LogTemp, Log, TEXT("끝남"));
+	else
+	{
+		arr.RemoveAt(arr.Num() - 1);
+	}
 
 	for (int32 ArrayNum = 0; ArrayNum < arr.Num(); ++ArrayNum)
 	{
