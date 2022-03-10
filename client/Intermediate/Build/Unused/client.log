@@ -1,116 +1,12 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT).
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-0021.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-0021.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-0033.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-0033.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-0086.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-0086.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-0294.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-0294.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-0322.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-0322.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-1392.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-1392.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-1511.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-1511.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-1605.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-1605.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-1773.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-1773.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-1785.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-1785.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-1904.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-1904.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-2396.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-2396.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-2432.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-2432.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-2509.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-2509.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-2523.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-2523.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-3227.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-3227.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-3346.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-3346.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-4325.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-4325.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-5477.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-5477.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-5851.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-5851.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-6520.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-6520.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-6711.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-6711.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-6872.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-6872.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-6928.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-6928.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-6960.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-6960.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-7036.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-7036.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-7298.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-7298.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-7541.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-7541.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-8048.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-8048.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-8367.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-8367.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-8494.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-8494.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-9408.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-9408.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-9485.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-9485.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-9531.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-9531.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-9651.dll
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Binaries\Win64\UE4Editor-client-9651.pdb
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-0021.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-0033.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-0086.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-0294.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-0322.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-1392.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-1511.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-1605.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-1773.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-1785.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-1904.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-2396.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-2432.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-2509.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-2523.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-3227.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-3346.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-4325.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-5477.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-5851.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-6520.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-6711.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-6872.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-6928.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-6960.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-7036.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-7298.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-7541.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-8048.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-8367.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-8494.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-9408.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-9485.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-9531.lib
-  Deleted hot-reload file: C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client-9651.lib
   Building clientEditor...
   Using Visual Studio 2019 14.29.30140 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 3 actions with 16 processes...
-    [1/3] UE4Editor-client.lib
+  Building 4 actions with 16 processes...
+    [1/4] NetworkManager.cpp
+    [2/4] UE4Editor-client.lib
        C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client.lib 라이브러리 및 C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client.exp 개체를 생성하고 있습니다.
-    [2/3] UE4Editor-client.dll
+    [3/4] UE4Editor-client.dll
        C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client.suppressed.lib 라이브러리 및 C:\Users\minjoo.kim\Desktop\chat\2022_CHAT_CLIENT\client\Intermediate\Build\Win64\UE4Editor\Development\client\UE4Editor-client.suppressed.exp 개체를 생성하고 있습니다.
-    [3/3] clientEditor.target
-  Total time in Parallel executor: 0.79 seconds
-  Total execution time: 1.31 seconds
+    [4/4] clientEditor.target
+  Total time in Parallel executor: 5.72 seconds
+  Total execution time: 6.07 seconds

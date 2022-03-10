@@ -26,6 +26,4 @@ namespace Message
 	const FString alreadyExistName = L"** 이미 존재하는 아이디입니다.";
 	//
 	const FString line = L"---------------------------------------------------------------";
-
-
 }

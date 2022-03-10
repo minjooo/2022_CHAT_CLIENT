@@ -152,6 +152,8 @@ bool ANetworkManager::SendMsg(FString& Msg)
 	if (m_socket == nullptr)return false;
 	check(m_socket);
 	int32 BytesSent = 0;
+	if (m_lesString.Len() > 0)
+		Msg = m_lesString + Msg;
 
 	wchar_t* uni = reinterpret_cast<wchar_t*>((uint8*)(*Msg));
 	char* mul;
@@ -159,7 +161,21 @@ bool ANetworkManager::SendMsg(FString& Msg)
 	mul = new CHAR[len];
 	WideCharToMultiByte(CP_ACP, 0, uni, -1, mul, len, NULL, NULL);
 
-	return m_socket->Send((uint8*)(mul), len, BytesSent);
+	bool res = m_socket->Send((uint8*)(mul), len, BytesSent);
+	if (res == false)
+	{
+		UE_LOG(LogTemp, Log, TEXT("send error"));
+		if (m_socket != nullptr)m_socket->Close();
+	}
+	else if (len != BytesSent)
+	{
+		m_lesString = FString(mul).RightChop(BytesSent);
+	}
+	else
+	{
+		m_lesString.Reset();
+	}
+	return res;
 }
 
 void ANetworkManager::RecvMsg()
@@ -167,13 +183,14 @@ void ANetworkManager::RecvMsg()
 	if (m_socket == nullptr)return;
 	check(m_socket);
 	UE_LOG(LogTemp, Log, TEXT("recv thread start"));
-
+	
 	uint8	Datagram[maxBuffer];
 	uint32	DataSize{ 0 };
 	while (true)
 	{
 		int32 BytesRead = 0;
-		if (m_socket->Recv(Datagram, maxBuffer-1, BytesRead))
+		bool res = m_socket->Recv(Datagram, maxBuffer - 1, BytesRead);
+		if (res)
 		{
 			if (BytesRead != 0)
 			{
@@ -182,11 +199,12 @@ void ANetworkManager::RecvMsg()
 				int len = MultiByteToWideChar(CP_ACP, 0, mul, strlen(mul) + 1, NULL, NULL);
 				uni = new WCHAR[len];
 				MultiByteToWideChar(CP_ACP, 0, mul, strlen(mul) + 1, uni, len);
-
 				m_msgQueue.Enqueue(uni);
 				memset(Datagram, 0, maxBuffer);
 			}
 		}
+		else
+			return;
 	}
 }
 

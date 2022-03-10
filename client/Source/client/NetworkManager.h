@@ -77,4 +77,5 @@ protected:
 	FSocket*			m_socket;
 	TQueue<FString>		m_msgQueue;
 	std::thread*		m_recvThread;
+	FString				m_lesString;
 };
