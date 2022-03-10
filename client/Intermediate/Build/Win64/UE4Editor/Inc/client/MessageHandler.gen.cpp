@@ -23,6 +23,11 @@ void EmptyLinkFunctionForGeneratedCodeMessageHandler() {}
 	{
 		ProcessEvent(FindFunctionChecked(NAME_AMessageHandler_LoginFail),NULL);
 	}
+	static FName NAME_AMessageHandler_LoginSuccess = FName(TEXT("LoginSuccess"));
+	void AMessageHandler::LoginSuccess()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AMessageHandler_LoginSuccess),NULL);
+	}
 	static FName NAME_AMessageHandler_OnChat = FName(TEXT("OnChat"));
 	void AMessageHandler::OnChat(const FString& msg)
 	{
@@ -67,6 +72,29 @@ void EmptyLinkFunctionForGeneratedCodeMessageHandler() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMessageHandler_LoginFail_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AMessageHandler_LoginSuccess_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMessageHandler_LoginSuccess_Statics::Function_MetaDataParams[] = {
+		{ "Category", "MsgHandler" },
+		{ "ModuleRelativePath", "MessageHandler.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMessageHandler_LoginSuccess_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMessageHandler, nullptr, "LoginSuccess", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMessageHandler_LoginSuccess_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMessageHandler_LoginSuccess_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMessageHandler_LoginSuccess()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMessageHandler_LoginSuccess_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -207,6 +235,7 @@ void EmptyLinkFunctionForGeneratedCodeMessageHandler() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMessageHandler_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AMessageHandler_LoginFail, "LoginFail" }, // 3221302584
+		{ &Z_Construct_UFunction_AMessageHandler_LoginSuccess, "LoginSuccess" }, // 689662848
 		{ &Z_Construct_UFunction_AMessageHandler_OnChat, "OnChat" }, // 3633282945
 		{ &Z_Construct_UFunction_AMessageHandler_RoomList, "RoomList" }, // 998749149
 		{ &Z_Construct_UFunction_AMessageHandler_UserList, "UserList" }, // 930381187
@@ -244,7 +273,7 @@ void EmptyLinkFunctionForGeneratedCodeMessageHandler() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMessageHandler, 54520684);
+	IMPLEMENT_CLASS(AMessageHandler, 3861622659);
 	template<> CLIENT_API UClass* StaticClass<AMessageHandler>()
 	{
 		return AMessageHandler::StaticClass();

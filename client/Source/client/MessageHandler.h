@@ -23,6 +23,8 @@ public:
 		void OnChat(const FString& msg);
 	UFUNCTION(BlueprintImplementableEvent, Category = "MsgHandler")
 		void LoginFail();
+	UFUNCTION(BlueprintImplementableEvent, Category = "MsgHandler")
+		void LoginSuccess();
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "MsgHandler")
 		void RoomList(const TArray<FString>& msg);

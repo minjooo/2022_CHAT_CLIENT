@@ -29,8 +29,9 @@ void AMessageHandler::Process(FString& msg)
 	for (int32 ArrayNum = 0; ArrayNum < arr.Num(); ++ArrayNum)
 	{
 		//ignore
-		if (arr[ArrayNum] == Message::help)
+		if (arr[ArrayNum] == Message::hi)
 		{
+			LoginSuccess();
 			if (ArrayNum + 4 > arr.Num())
 				break;
 			else
@@ -43,7 +44,7 @@ void AMessageHandler::Process(FString& msg)
 			else
 				ArrayNum += 3;
 		}
-		else if (arr[ArrayNum] == Message::hi)
+		else if (arr[ArrayNum] == Message::help)
 		{
 			if (ArrayNum + 11 > arr.Num())
 				break;
