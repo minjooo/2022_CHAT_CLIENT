@@ -124,6 +124,17 @@ void ANetworkManager::SendChat(const FString& command)
 	SendMsg(str);
 }
 
+void ANetworkManager::SendPrivateChat(const FString& to, const FString& command)
+{
+	FString str = "/to ";
+	str += to;
+	str += " ";
+	str += command;
+	str += "\r\n";
+	UE_LOG(LogTemp, Log, TEXT("send text!"));
+	SendMsg(str);
+}
+
 void ANetworkManager::SendMakeRoom(const FString& name, const FString& max)
 {
 	FString str = "o ";

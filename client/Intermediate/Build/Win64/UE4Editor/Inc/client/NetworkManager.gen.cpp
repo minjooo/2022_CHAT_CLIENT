@@ -19,6 +19,15 @@ void EmptyLinkFunctionForGeneratedCodeNetworkManager() {}
 	UPackage* Z_Construct_UPackage__Script_client();
 	CLIENT_API UClass* Z_Construct_UClass_AMessageHandler_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ANetworkManager::execSendPrivateChat)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_to);
+		P_GET_PROPERTY(FStrProperty,Z_Param_command);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SendPrivateChat(Z_Param_to,Z_Param_command);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ANetworkManager::execSendChat)
 	{
 		P_GET_PROPERTY(FStrProperty,Z_Param_command);
@@ -115,6 +124,7 @@ void EmptyLinkFunctionForGeneratedCodeNetworkManager() {}
 			{ "SendJoin", &ANetworkManager::execSendJoin },
 			{ "SendLogin", &ANetworkManager::execSendLogin },
 			{ "SendMakeRoom", &ANetworkManager::execSendMakeRoom },
+			{ "SendPrivateChat", &ANetworkManager::execSendPrivateChat },
 			{ "SendQuitRoom", &ANetworkManager::execSendQuitRoom },
 			{ "SendRoomInfo", &ANetworkManager::execSendRoomInfo },
 			{ "SendRoomList", &ANetworkManager::execSendRoomList },
@@ -384,6 +394,59 @@ void EmptyLinkFunctionForGeneratedCodeNetworkManager() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics
+	{
+		struct NetworkManager_eventSendPrivateChat_Parms
+		{
+			FString to;
+			FString command;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_to_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_to;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_command_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_command;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics::NewProp_to_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics::NewProp_to = { "to", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(NetworkManager_eventSendPrivateChat_Parms, to), METADATA_PARAMS(Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics::NewProp_to_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics::NewProp_to_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics::NewProp_command_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics::NewProp_command = { "command", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(NetworkManager_eventSendPrivateChat_Parms, command), METADATA_PARAMS(Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics::NewProp_command_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics::NewProp_command_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics::NewProp_to,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics::NewProp_command,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Network" },
+		{ "ModuleRelativePath", "NetworkManager.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ANetworkManager, nullptr, "SendPrivateChat", nullptr, nullptr, sizeof(NetworkManager_eventSendPrivateChat_Parms), Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ANetworkManager_SendPrivateChat()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ANetworkManager_SendPrivateChat_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ANetworkManager_SendQuitRoom_Statics
 	{
 #if WITH_METADATA
@@ -565,6 +628,7 @@ void EmptyLinkFunctionForGeneratedCodeNetworkManager() {}
 		{ &Z_Construct_UFunction_ANetworkManager_SendJoin, "SendJoin" }, // 2151170948
 		{ &Z_Construct_UFunction_ANetworkManager_SendLogin, "SendLogin" }, // 3259408097
 		{ &Z_Construct_UFunction_ANetworkManager_SendMakeRoom, "SendMakeRoom" }, // 4086695119
+		{ &Z_Construct_UFunction_ANetworkManager_SendPrivateChat, "SendPrivateChat" }, // 2378688060
 		{ &Z_Construct_UFunction_ANetworkManager_SendQuitRoom, "SendQuitRoom" }, // 2584145216
 		{ &Z_Construct_UFunction_ANetworkManager_SendRoomInfo, "SendRoomInfo" }, // 3070282308
 		{ &Z_Construct_UFunction_ANetworkManager_SendRoomList, "SendRoomList" }, // 3957776331
@@ -614,7 +678,7 @@ void EmptyLinkFunctionForGeneratedCodeNetworkManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANetworkManager, 2983101998);
+	IMPLEMENT_CLASS(ANetworkManager, 2125305189);
 	template<> CLIENT_API UClass* StaticClass<ANetworkManager>()
 	{
 		return ANetworkManager::StaticClass();

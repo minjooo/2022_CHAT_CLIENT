@@ -54,6 +54,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Network")
 		void SendChat(const FString& command);
 
+	UFUNCTION(BlueprintCallable, Category = "Network")
+		void SendPrivateChat(const FString& to, const FString& command);
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

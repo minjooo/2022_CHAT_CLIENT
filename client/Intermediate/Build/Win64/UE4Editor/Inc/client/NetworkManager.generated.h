@@ -16,6 +16,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define client_Source_client_NetworkManager_h_16_SPARSE_DATA
 #define client_Source_client_NetworkManager_h_16_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execSendPrivateChat); \
 	DECLARE_FUNCTION(execSendChat); \
 	DECLARE_FUNCTION(execSendMakeRoom); \
 	DECLARE_FUNCTION(execSendExit); \
@@ -31,6 +32,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define client_Source_client_NetworkManager_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execSendPrivateChat); \
 	DECLARE_FUNCTION(execSendChat); \
 	DECLARE_FUNCTION(execSendMakeRoom); \
 	DECLARE_FUNCTION(execSendExit); \
