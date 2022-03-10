@@ -2,17 +2,8 @@
 
 #pragma once
 #include <thread>
-#include <string>
-#include <vector>
-#include <locale>
-#include <functional>
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Engine.h"
-#include "Networking.h"
-#include "Sockets.h"
-#include "SocketSubsystem.h"
-#include "Networking/Public/Interfaces/IPv4/IPv4Address.h"
 #include "NetworkManager.generated.h"
 
 constexpr int32	maxBuffer = 1024;

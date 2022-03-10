@@ -24,7 +24,13 @@ void AMessageHandler::Process(FString& msg)
 	//UE_LOG(LogTemp, Log, TEXT("프로세스 들어옴 : % s"), *msg);
 
 	TArray<FString> arr;
+	//if(arr[arr.Num()-1].fin)
 	msg.ParseIntoArray(arr, TEXT("\r\n"));
+	for (auto& i : arr)
+	{
+		UE_LOG(LogTemp, Log, TEXT("받음11 : %s"), *i);
+	}
+	UE_LOG(LogTemp, Log, TEXT("끝남"));
 
 	for (int32 ArrayNum = 0; ArrayNum < arr.Num(); ++ArrayNum)
 	{

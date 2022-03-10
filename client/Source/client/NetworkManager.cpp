@@ -3,7 +3,16 @@
 
 #include "NetworkManager.h"
 #include "Windows/AllowWindowsPlatformTypes.h"
+#include "Networking/Public/Interfaces/IPv4/IPv4Address.h"
+#include "Engine.h"
+#include "Networking.h"
+#include "Sockets.h"
+#include "SocketSubsystem.h"
 #include <codecvt>
+#include <string>
+#include <vector>
+#include <locale>
+#include <functional>
 #include <Windows.h>
 #include <wchar.h>
 #include "MessageHandler.h"
@@ -192,7 +201,6 @@ void ANetworkManager::Tick(float DeltaTime)
 			str += tmp;
 			m_msgQueue.Pop();
 		}
-		//UE_LOG(LogTemp, Log, TEXT("받음2 : %s"), *str);
 		m_msgHandler->Process(str);
 		str.Reset();
 	}
