@@ -43,12 +43,27 @@ void EmptyLinkFunctionForGeneratedCodeNetworkManager() {}
 		P_THIS->SendExit();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(ANetworkManager::execSendQuitRoom)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SendQuitRoom();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ANetworkManager::execSendJoin)
 	{
 		P_GET_PROPERTY(FStrProperty,Z_Param_id);
 		P_FINISH;
 		P_NATIVE_BEGIN;
 		P_THIS->SendJoin(Z_Param_id);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ANetworkManager::execSendUserInfo)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_id);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SendUserInfo(Z_Param_id);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(ANetworkManager::execSendRoomInfo)
@@ -100,8 +115,10 @@ void EmptyLinkFunctionForGeneratedCodeNetworkManager() {}
 			{ "SendJoin", &ANetworkManager::execSendJoin },
 			{ "SendLogin", &ANetworkManager::execSendLogin },
 			{ "SendMakeRoom", &ANetworkManager::execSendMakeRoom },
+			{ "SendQuitRoom", &ANetworkManager::execSendQuitRoom },
 			{ "SendRoomInfo", &ANetworkManager::execSendRoomInfo },
 			{ "SendRoomList", &ANetworkManager::execSendRoomList },
+			{ "SendUserInfo", &ANetworkManager::execSendUserInfo },
 			{ "SendUserList", &ANetworkManager::execSendUserList },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -367,6 +384,29 @@ void EmptyLinkFunctionForGeneratedCodeNetworkManager() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ANetworkManager_SendQuitRoom_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ANetworkManager_SendQuitRoom_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Network" },
+		{ "ModuleRelativePath", "NetworkManager.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ANetworkManager_SendQuitRoom_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ANetworkManager, nullptr, "SendQuitRoom", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ANetworkManager_SendQuitRoom_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ANetworkManager_SendQuitRoom_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ANetworkManager_SendQuitRoom()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ANetworkManager_SendQuitRoom_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ANetworkManager_SendRoomInfo_Statics
 	{
 		struct NetworkManager_eventSendRoomInfo_Parms
@@ -431,6 +471,47 @@ void EmptyLinkFunctionForGeneratedCodeNetworkManager() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ANetworkManager_SendUserInfo_Statics
+	{
+		struct NetworkManager_eventSendUserInfo_Parms
+		{
+			FString id;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_id_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_id;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ANetworkManager_SendUserInfo_Statics::NewProp_id_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_ANetworkManager_SendUserInfo_Statics::NewProp_id = { "id", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(NetworkManager_eventSendUserInfo_Parms, id), METADATA_PARAMS(Z_Construct_UFunction_ANetworkManager_SendUserInfo_Statics::NewProp_id_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_ANetworkManager_SendUserInfo_Statics::NewProp_id_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ANetworkManager_SendUserInfo_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANetworkManager_SendUserInfo_Statics::NewProp_id,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ANetworkManager_SendUserInfo_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Network" },
+		{ "ModuleRelativePath", "NetworkManager.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ANetworkManager_SendUserInfo_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ANetworkManager, nullptr, "SendUserInfo", nullptr, nullptr, sizeof(NetworkManager_eventSendUserInfo_Parms), Z_Construct_UFunction_ANetworkManager_SendUserInfo_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ANetworkManager_SendUserInfo_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ANetworkManager_SendUserInfo_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ANetworkManager_SendUserInfo_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ANetworkManager_SendUserInfo()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ANetworkManager_SendUserInfo_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ANetworkManager_SendUserList_Statics
 	{
 #if WITH_METADATA
@@ -484,8 +565,10 @@ void EmptyLinkFunctionForGeneratedCodeNetworkManager() {}
 		{ &Z_Construct_UFunction_ANetworkManager_SendJoin, "SendJoin" }, // 2151170948
 		{ &Z_Construct_UFunction_ANetworkManager_SendLogin, "SendLogin" }, // 3259408097
 		{ &Z_Construct_UFunction_ANetworkManager_SendMakeRoom, "SendMakeRoom" }, // 4086695119
+		{ &Z_Construct_UFunction_ANetworkManager_SendQuitRoom, "SendQuitRoom" }, // 2584145216
 		{ &Z_Construct_UFunction_ANetworkManager_SendRoomInfo, "SendRoomInfo" }, // 3070282308
 		{ &Z_Construct_UFunction_ANetworkManager_SendRoomList, "SendRoomList" }, // 3957776331
+		{ &Z_Construct_UFunction_ANetworkManager_SendUserInfo, "SendUserInfo" }, // 2414218962
 		{ &Z_Construct_UFunction_ANetworkManager_SendUserList, "SendUserList" }, // 1590345817
 	};
 #if WITH_METADATA
@@ -531,7 +614,7 @@ void EmptyLinkFunctionForGeneratedCodeNetworkManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANetworkManager, 639478561);
+	IMPLEMENT_CLASS(ANetworkManager, 2983101998);
 	template<> CLIENT_API UClass* StaticClass<ANetworkManager>()
 	{
 		return ANetworkManager::StaticClass();

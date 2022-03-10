@@ -19,7 +19,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execSendChat); \
 	DECLARE_FUNCTION(execSendMakeRoom); \
 	DECLARE_FUNCTION(execSendExit); \
+	DECLARE_FUNCTION(execSendQuitRoom); \
 	DECLARE_FUNCTION(execSendJoin); \
+	DECLARE_FUNCTION(execSendUserInfo); \
 	DECLARE_FUNCTION(execSendRoomInfo); \
 	DECLARE_FUNCTION(execSendRoomList); \
 	DECLARE_FUNCTION(execSendUserList); \
@@ -32,7 +34,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execSendChat); \
 	DECLARE_FUNCTION(execSendMakeRoom); \
 	DECLARE_FUNCTION(execSendExit); \
+	DECLARE_FUNCTION(execSendQuitRoom); \
 	DECLARE_FUNCTION(execSendJoin); \
+	DECLARE_FUNCTION(execSendUserInfo); \
 	DECLARE_FUNCTION(execSendRoomInfo); \
 	DECLARE_FUNCTION(execSendRoomList); \
 	DECLARE_FUNCTION(execSendUserList); \

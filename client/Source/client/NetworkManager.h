@@ -46,7 +46,13 @@ public:
 		void SendRoomInfo(const FString& id);
 
 	UFUNCTION(BlueprintCallable, Category = "Network")
+		void SendUserInfo(const FString& id);
+
+	UFUNCTION(BlueprintCallable, Category = "Network")
 		void SendJoin(const FString& id);
+
+	UFUNCTION(BlueprintCallable, Category = "Network")
+		void SendQuitRoom();
 
 	UFUNCTION(BlueprintCallable, Category = "Network")
 		void SendExit();

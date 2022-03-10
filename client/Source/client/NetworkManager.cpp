@@ -68,7 +68,16 @@ void ANetworkManager::SendRoomList()
 
 void ANetworkManager::SendRoomInfo(const FString& id)
 {
-	FString str = "st ";
+	FString str = "/st ";
+	str += id;
+	str += "\r\n";
+	UE_LOG(LogTemp, Log, TEXT("send room info!"));
+	SendMsg(str);
+}
+
+void ANetworkManager::SendUserInfo(const FString& id)
+{
+	FString str = "/pf ";
 	str += id;
 	str += "\r\n";
 	UE_LOG(LogTemp, Log, TEXT("send room info!"));
@@ -84,9 +93,16 @@ void ANetworkManager::SendJoin(const FString& id)
 	SendMsg(str);
 }
 
+void ANetworkManager::SendQuitRoom()
+{
+	FString str = "/q \r\n";
+	UE_LOG(LogTemp, Log, TEXT("send quit room!"));
+	SendMsg(str);
+}
+
 void ANetworkManager::SendExit()
 {
-	FString str = "xx \r\n";
+	FString str = "/x \r\n";
 	UE_LOG(LogTemp, Log, TEXT("send exit!"));
 	SendMsg(str);
 }
